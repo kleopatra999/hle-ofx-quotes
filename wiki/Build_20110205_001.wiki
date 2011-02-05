@@ -10,13 +10,21 @@ Notes for Build_20110205_001
 
 = Changes =
 
+  * File name change: jar file is now named hleOfxQuotes-yyyyMMdd_NNN.jar. For example *hleOfxQuotes-20110205_001.jar*. How to start the still the same
+    * Double-click on hleOfxQuotes-yyyyMMdd_NNN.jar
+    * Or run
+{{{
+java -jar hleOfxQuotes-yyyyMMdd_NNN.jar
+}}}
+
   * Add an option to randomize share count. The idea behind this is followed: MM2005UK need transaction to get the quote price updated. MM can automatically add/remove shares when it notices that the "local" share count in the Dummy account is different from the imported statement (one confirmation dialog box). Randomly generating the share count is an attempt to see if we can make it easier to force the add/remove transactions.
   Mostly of interest to UK user. US user should NOT try to set this option. To set this option, select menu item
 {{{
   Edit -> Randomize Share Count -> then select 'true' (default is false)
 }}}
   When 'true', the share count from source quote is ignored and a random number between .001 and .999 is generated.
-  * Add an option to force generation of OFX block *<INVTRANLIST*>
+
+  * Add an option to force generation of OFX block {{{<INVTRANLIST>}}}
 {{{
         <!--work-around for MM2005UK to set the download statement date-->
         <INVTRANLIST>
@@ -31,6 +39,6 @@ Notes for Build_20110205_001
 {{{
   Edit -> Force <INVTRANLIST>-> then select 'true' (default is false)
 }}}
-  When 'true', will force a generation of the *<INVTRANLIST*> block as shown above.
+  When 'true', will force a generation of the {{{<INVTRANLIST>}}} block as shown above.
    
   * In the "Save OFX" file dialog, remember the directory. Default to current directory.
