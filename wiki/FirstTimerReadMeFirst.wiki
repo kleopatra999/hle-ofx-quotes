@@ -25,9 +25,9 @@ GOOG, 600.00, 0.00
   * This tool does not do direct connection to bank and brokerage sites. Look for PocketSense for that task (http://sites.google.com/site/pocketsense/home/msmoneyfixp1)
 
 =Where thing could go wrong=
- * Tool cannot find the price for a particular symbol. For UK, I recommend using the ft.com quote source. For other international user, try Google Portfolio.
+  * Tool cannot find the price for a particular symbol. For UK, I recommend using the ft.com quote source. For other international user, try Google Portfolio.
   * Price in MM does not update. See above on notes on price is update only *ONCE* a day.
-  * MM indicates that the import statement has error. Look for a tool called OFXAnalyzer which can check the syntax.
+  * MM indicates that the import statement has error. Look for a tool called OFXAnalyzer which can check the syntax. See where to get additional help below.
   
 =Where to get help=
   * http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
