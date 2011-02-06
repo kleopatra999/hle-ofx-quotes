@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Read me if you are UK users.
 
 = Introduction =
 
@@ -29,6 +29,4 @@ Edit -> Randomized share count (set to true)
   * For a give security (stock, fund ..) chances are symbol that ft.com provides is *NOT* the same as that in Microsoft Money so you need a way to say:
     * When dealing with ft.com, use this symbolA
     * When dealing with MM, this this symbolB
-
-
 
