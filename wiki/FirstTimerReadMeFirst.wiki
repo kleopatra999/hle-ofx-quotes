@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary If you are first-timer, please read me first
 
 = Introduction =
 
