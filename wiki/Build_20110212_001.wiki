@@ -1,4 +1,6 @@
 #summary Build_20110212_001
+= Download =
+  * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20110212_001.jar
 
 = Changes =
 
