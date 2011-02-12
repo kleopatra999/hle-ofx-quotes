@@ -1,0 +1,5 @@
+#Build_20110212_001
+
+= Changes =
+
+An emergency fix. Yahoo quote server is returning quote entry with no security name. When that happens, the generated OFX file is malformed and is being rejected by MM. Fix is to use the symbol string when name is missing.
