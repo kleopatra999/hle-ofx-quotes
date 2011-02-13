@@ -1,0 +1,20 @@
+#summary Quote Sources
+
+Some comments on Quote Sources: where we get our quote price. Currently, this tools supports the following quote sources
+
+  # Yahoo: very good for US stocks, funds ...
+  # Yahoo Options: options prices. You can also this as the fall back quote source for symbols that the main Yahoo quotes source fail to find.
+  # ft.com: very good coverage for UK funds. The one draw back is that you need to download the CSV file yourself. 
+  # Google Portfolio: has its quirk. You must have a non-zero transaction. Reason: you cannot get the quote price directly, rather we derive the quote price from currentValue/shares. Can return multiple currency prices (for example: in USD and GBP)
+
+Most US users use Yahoo. Most UK users use ft.com.
+
+CSV import is sorted of supported via ft.com. If you can get your CSV file into the ft.com format, then you are set. The ft.com format is:
+{{{
+Name, Symbol: Exchange, Quote Date & Time, Last Price, Currency for Last Price
+
+Fidelity Moneybuilder Growth ISA Class NAV,FIMGC,Feb 07 2011 00:00 GMT,57.89,GBX
+Standard Life UK Smaller Companies Acc Inst Shares,STUSCA,Feb 07 2011 00:00 GMT,341,GBX
+}}}
+
+*CAVEAT*: We are at the mercy of the *free* quote source. We've seen quote source (specifically Yahoo) returning wrong data in the past. Make sure you have good backup so that you can back out of a bad import.
