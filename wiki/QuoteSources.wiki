@@ -1,4 +1,4 @@
-#summary Quote Sources
+#summary Quote Sources, where we get our quotes from
 
 Some comments on Quote Sources: where we get our quote price. Currently, this tools supports the following quote sources
 
