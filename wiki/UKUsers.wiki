@@ -12,7 +12,11 @@ Updating quote prices for UK users is not fully working yet. I am documenting he
 {{{
 Edit -> Randomized share count (set to true)
 }}}
-  * User the mapper.csv file to map the ft.com symbol into the matching symbol in Microsoft Money.
+  * Use the mapper.csv file to map the ft.com symbol into the matching symbol in Microsoft Money.
+  * Enable {{{"Force <INVTRANLIST>"}}} so that the MM will show the correct statement date
+{{{
+Edit -> Force <INVTRANLIST> (set to true)
+}}}
   * Each time you import, you will be prompt to adjust the share count (add or remove), go ahead and let Microsoft Money does it. A reminder: for imported statement, MM will only update the share price *ONCE* a day.
 
 == Why ft.com? ==
@@ -29,3 +33,7 @@ Edit -> Randomized share count (set to true)
   * For a give security (stock, fund ..) chances are symbol that ft.com provides is *NOT* the same as that in Microsoft Money so you need a way to say:
     * When dealing with ft.com, use this symbolA
     * When dealing with MM, this this symbolB
+
+=== Why {{{"Force <INVTRANLIST>"}}} ===
+
+  * MMM05 appears to depend on the date fields in tag {{{<INVTRANLIST>}}} for the statement date. If you don't use this work-around, the statement will show up in MM05 as having a date of 1970.
