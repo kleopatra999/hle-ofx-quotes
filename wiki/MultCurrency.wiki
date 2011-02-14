@@ -1,4 +1,4 @@
-#summary Multi-currency, current state
+#summary Multi-currency, current state (DRAFT)
 
 =DRAFT=
 
