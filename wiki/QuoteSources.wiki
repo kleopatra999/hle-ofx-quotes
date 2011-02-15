@@ -1,6 +1,6 @@
 #summary Quote Sources, where we get our quotes from
 
-Some comments on Quote Sources: where we get our quote price. Currently, this tools supports the following quote sources
+Some comments on Quote Sources: where we get our quote price. Currently, this tool supports the following quote sources
 
   # Yahoo: very good for US stocks, funds ...
   # Yahoo Options: options prices. You can also this as the fall back quote source for symbols that the main Yahoo quotes source fail to find.
