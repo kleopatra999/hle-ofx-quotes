@@ -9,8 +9,8 @@ There is no documented way to externally update the quote price in Microsoft Mon
 The tool mimics a statement from brokerage using zero share count. This means you need a *Dummy* account in MM to stores the imported information. MM will prompt if you want to create one the first time you import the generated OFX.
 
 The flow goes something like this:
-  * Tool: Hey, MM here is a statement from brokerage Dummy
-  * MM: check and says I know nothing about Dummy. Do you want me to create an account for it. You say yes.
+  * Tool: Hey, MM here is a statement from your brokerage named Dummy
+  * MM: check and says ... I know nothing about Dummy. Do you want me to create an account for it? You say yes.
   * MM: imports the statement which has a list of securities with updated price and zero shares. Something like
 {{{
 AAPL,345.00, 0.00
