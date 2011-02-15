@@ -4,7 +4,7 @@
 
 If you are first-timer, please read me first to see what works, what does not.
 
-There is no documented way to externally update the price in Microsoft Money. This tool exploits a particular path that has shown to work in Microsoft Money Sunset US. Seems to work with other version too but there is no way to know for sure until you try it yourself.
+There is no documented way to externally update the quote price in Microsoft Money. This tool exploits a particular path that has shown to work in Microsoft Money Sunset US. Seems to work with other version too but there is no way to know for sure until you try it yourself.
 
 The tool mimics a statement from brokerage using zero share count. This means you need a *Dummy* account in MM to stores the imported information. MM will prompt if you want to create one the first time you import the generated OFX.
 
