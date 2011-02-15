@@ -2,12 +2,12 @@
 
 = Introduction =
 
-Updating quote prices for UK users is kind of work with some rough spots. I am documenting here the current state as I know it.
+Updating quote prices for UK users is sorting of working with some rough spots. I am documenting here the current state as I know it.
 
 = Known working path =
 
   * Use the ft.com quote source to get UK stocks and fund price.
-  * Use the latest test build (http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-20110205_001.jar) which has support for randomized share count (it does sounds scary: financial info and randomized but this only for the Dummy account).
+  * Use the latest test build (http://code.google.com/p/hle-ofx-quotes/downloads/list) which has support for randomized share count (it does sounds scary: financial info and randomized but this only for the Dummy account).
   * Make sure you set the randomized setting
 {{{
 Edit -> Randomized share count (set to true)
