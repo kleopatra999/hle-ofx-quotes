@@ -19,6 +19,5 @@ HKCU\Software\JavaSoft\Prefs\le\com\tools\moneyutils\ofx\quotes
 
 == URLs ==
   * Yahoo: download.finance.yahoo.com
-  * Yahoo API: for looking up options, query.yahooapis.com and finance.yahoo.com
+  * Yahoo API: for looking up options: query.yahooapis.com and finance.yahoo.com
   * Google Portfolio: finance.google.com
-
