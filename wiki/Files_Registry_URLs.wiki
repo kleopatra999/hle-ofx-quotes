@@ -1,4 +1,4 @@
-#summary What registry, files, URLs this tool will access?
+#summary What registry, files, URLs will this tool access?
 
 = Introduction =
 
@@ -16,6 +16,11 @@ HKCU\Software\JavaSoft\Prefs\le\com\tools\moneyutils\ofx\quotes
   * Read mapper.cvs
   * Read directory bookmarks/ for entries to populate Yahoo's popup menu.
   * Write hleOfxQuote-log.txt (log file)
+  * Write generated OFX to temp directory. On Vista, I see
+{{{
+C:\Users\HUNGLE~1\AppData\Local\Temp\quotes8452759604132664180.ofx
+}}}
+  These files will be deleted on exit.
 
 == URLs ==
   * Yahoo: download.finance.yahoo.com
