@@ -1,0 +1,24 @@
+#summary What registry, files, URLs this tool will access?
+
+= Introduction =
+
+Here is a list of registry files, URLS this tools access
+
+
+== Registry ==
+
+This tool uses the Java's Preferences class to store user-specific information (such as last used quote list, various settings like 'Randomized Shared Count' ...). On Windows, the Preferences implementation uses Window's registry
+{{{
+HKCU\Software\JavaSoft\Prefs\le\com\tools\moneyutils\ofx\quotes
+}}}
+
+== Files ==
+  * Read mapper.cvs
+  * Read directory bookmarks/ for entries to populate Yahoo's popup menu.
+  * Write hleOfxQuote-log.txt (log file)
+
+== URLs ==
+  * Yahoo: download.finance.yahoo.com
+  * Yahoo API: for looking up options, query.yahooapis.com and finance.yahoo.com
+  * Google Portfolio: finance.google.com
+
