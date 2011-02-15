@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Here is a list of registry files, URLS this tools access
+Here is a list of registry, files, URLS this tools access
 
 
 == Registry ==
