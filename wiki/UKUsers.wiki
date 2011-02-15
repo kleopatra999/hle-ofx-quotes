@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Updating quote prices for UK users is not fully working yet. I am documenting here the current state as I know it.
+Updating quote prices for UK users is kind of work with some rough spots. I am documenting here the current state as I know it.
 
 = Known working path =
 
