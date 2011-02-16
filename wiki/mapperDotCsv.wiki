@@ -15,6 +15,7 @@ This tool can use a helper file called *mapper.csv* to let you map a symbol that
 Help -> About
 }}}
   to get the name of the directory.
+  * Create file mapper.csv. You can use Excel, if you want. Just make sure that you save it as CSV file.
   * Format of mapper.csv
 {{{
 MSMoneySymbol,QuotesSourceSymbol,IsMutualFund,IsOptions
@@ -26,4 +27,3 @@ AAPLOPT1,AAPL110219C00220000,FALSE,TRUE
     * IsOptions: set TRUE if this security is an options
 
 Sanity check: check the content of the "Mapper" tab, it should have the content of your mapper.csv file. If not, the tool did not read the file.
-
