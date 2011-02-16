@@ -18,6 +18,22 @@ GOOG, 600.00, 0.00
 }}}
   * MM: will update the holding values in other account that has AAPL and GOOG.
 
+= Prerequisites =
+
+Your will need a recent version of Java: 1.6 and later is best. To check your Java version
+{{{
+# Start cmd window
+Run -> cmd 
+# Then run
+java -version
+
+# You want to see something that looks like this
+C:\Documents and Settings\Administrator>java -version
+java version "1.6.0_24"
+Java(TM) SE Runtime Environment (build 1.6.0_24-b07)
+Java HotSpot(TM) Client VM (build 19.1-b02, mixed mode, sharing)
+}}}
+
 = Limitation =
 
   * For import statement, MM appear to update its quote price only *ONCE* a day. So if you import one in the morning, subsequent update will not change the price.
