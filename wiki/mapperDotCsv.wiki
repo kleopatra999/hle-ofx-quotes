@@ -4,7 +4,7 @@
 
 This tool can use a helper file called *mapper.csv* to let you map a symbol that MM knows to a symbol that your quote source knows.
 
-  * *Problem*: let's say you have stock the MM knows as *BBT*, your quote source (where you get price) knows the same stock as *BBT:NYQ*. Obviously there is mis-match that someone will have to resolve. That is where mapper.csv comes in to play. Using mapper.csv, you can tell the tool:
+  * *Problem*: let's say you have stock that MM knows as *BBT*, your quote source (where you get price) knows the same stock as *BBT:NYQ*. Obviously there is mis-match that someone will have to resolve. That is where mapper.csv comes in to play. Using mapper.csv, you can tell the tool:
     * When talking to the quote source, use *BBT:NYQ*
     * When talking to MM, use *BBT*. Literally, this means when generating the OFX file.
 
@@ -26,8 +26,6 @@ AAPLOPT1,AAPL110219C00220000,FALSE,TRUE
     * IsOptions: set TRUE if this security is an options
 
 Sanity check: check the content of the "Mapper" tab, it should have the content of your mapper.csv file. If not, the tool did not read the file.
-
-
 
 
 
