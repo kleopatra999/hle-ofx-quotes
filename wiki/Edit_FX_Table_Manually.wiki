@@ -1,0 +1,6 @@
+#summary How to edit the FX (Exchange Rate) table manually
+
+Within MM, to edit the FX (Exchange Rate) table manually
+{{{
+Tools -> Settings -> ProgramSettings -> UpdateCurrencies
+}}}
