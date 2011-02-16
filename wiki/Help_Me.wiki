@@ -1,6 +1,5 @@
 #summary How to get help
 
   * Please check the wiki first: https://code.google.com/p/hle-ofx-quotes/w/list
-  * Review current comments and post questions to this blog: http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
+  * Review current comments and post YOUR questions to this blog: http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
   * You can send me email: hleofxquotes at gmail dot com
-
