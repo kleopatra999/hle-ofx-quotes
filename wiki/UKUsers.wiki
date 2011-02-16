@@ -13,6 +13,12 @@ Updating quote prices for UK users is sort of working with some rough spots. I a
 Edit -> Randomized share count (set to true)
 }}}
   * Use the mapper.csv file to map the ft.com symbol into the matching symbol in Microsoft Money.
+  If you have managed funds, make sure you use mapper.csv file to give the tool a hint that a particular security is a managed fund. For example:
+{{{
+MSMoneySymbol,QuotesSourceSymbol,IsMutualFund,IsOptions
+FIMYI,FIMYI,TRUE,FALSE
+}}}
+  See: https://code.google.com/p/hle-ofx-quotes/wiki/mapperDotCsv
   * Enable {{{"Force <INVTRANLIST>"}}} so that the MM will show the correct statement date
 {{{
 Edit -> Force <INVTRANLIST> (set to true)
@@ -23,6 +29,7 @@ Edit -> Force <INVTRANLIST> (set to true)
   
   * Best coverage for UK funds. Yahoo does not come close.
   * Alternative is Google Portfolio if you don't want to manually download the CSV file.
+  * *Please don't use Yahoo*: Yahoo does NOT return security currency and I will assume the price is in USD which will likely to be wrong. Stay with ft.com. It is your best bet.
 
 === Why randomized share count ===
   
@@ -33,6 +40,7 @@ Edit -> Force <INVTRANLIST> (set to true)
   * For a give security (stock, fund ..) chances are symbol that ft.com provides is *NOT* the same as that in Microsoft Money so you need a way to say:
     * When dealing with ft.com, use this symbolA
     * When dealing with MM, this this symbolB
+  * If you have managed funds, the tool needs to be told that a particular symbol is a managed fund or those prices are not going to get updated.
 
 === Why {{{"Force <INVTRANLIST>"}}} ===
 
