@@ -2,7 +2,7 @@
 
 Within MM, to edit the FX (Exchange Rate) table manually
 {{{
-Tools -> Settings -> ProgramSettings -> UpdateCurrencies
+Tools -> Settings -> Program settings -> Update currencies
 }}}
 
 In general, you can get the current exchange rate from Yahoo using the pseudo-symbol XXXYYY where 
