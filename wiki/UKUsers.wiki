@@ -1,5 +1,9 @@
 #summary Read me if you are UK users.
 
+It appears that MS2005UK still getting quote price updated. So you might NOT want to try any of this yet!. Check with the following resources for the latest news on that front:
+  * http://social.microsoft.com/Forums/en-US/money/threads
+  * http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
+
 = Introduction =
 
 Updating quote prices for UK users is sort of working with some rough spots. I am documenting here the current state as I know it.
