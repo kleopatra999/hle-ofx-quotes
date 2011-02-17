@@ -14,7 +14,7 @@ This is a DRAFT. Still researching for the right info.
 MM supports multi-currency:
   * There is a based currency (for example: GBP)
   * And each security can have its own currency (for example: EUR, USD ...)
-  * MM will take care of converting between currencies using exchange rates which can be edit manually or via online service (which officially is off)
+  * MM will take care of converting between currencies using exchange rates which can be edit manually or via online service (which  is officially off)
 
 = Problem =
 
