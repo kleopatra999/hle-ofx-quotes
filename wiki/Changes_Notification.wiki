@@ -1,0 +1,7 @@
+#summary How to get notification about changes in the project
+
+= Introduction =
+
+No notification is available. But you can subscribe to the project feed. See: 
+
+  * http://code.google.com/p/hle-ofx-quotes/feeds
