@@ -18,6 +18,10 @@ GOOG, 600.00, 0.00
 }}}
   * MM: will update the holding values in other account that has AAPL and GOOG.
 
+= Backup Plan =
+
+Before you do anything, make sure you have backup or know how to roll back (http://code.google.com/p/hle-ofx-quotes/wiki/Rolling_Back)
+
 = Prerequisites =
 
 Your will need a recent version of Java: 1.6 and later is best. To check your Java version
