@@ -7,7 +7,7 @@ This tool can use a helper file called *mapper.csv* to let you map a symbol that
   * *Problem*: let's say you have stock that MM knows as *BBT*, your quote source (where you get price) knows the same stock as *BBT:NYQ*. Obviously there is mis-match that someone will have to resolve. That is where mapper.csv comes in to play. Using mapper.csv, you can tell the tool:
     * When talking to the quote source, use *BBT:NYQ*
     * When talking to MM, use *BBT*. Literally, this means when generating the OFX file.
-  * Some Quote Source also does NOT provide the information that identify if a symbol is of type mutual funds or managed funds. This tool needs that information to generate correct OFX output. If you are using ft.com or Google Portfolio, you MUST create a mapper.cvs file or your fund will be updated correctly.
+  * Some Quote Source also does NOT provide the information that identify if a symbol is of type mutual funds or managed funds. This tool needs that information to generate correct OFX output. If you are using ft.com or Google Portfolio, you MUST create a mapper.cvs file with filled in column *IsMutualFund* or your fund will be updated correctly.
 
 == Usage ==
 
