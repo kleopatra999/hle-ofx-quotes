@@ -1,4 +1,4 @@
-#summary Recommendation on how to roll back
+#summary 000 - Recommendation on how to roll back
 
 = Introduction =
 
@@ -19,8 +19,6 @@ There are two ways to start Microsoft Money
   # OR double-click on the `*`.mny file itself
 
 Choice #1 will always start the last `*`.mny file that you opened. Keep that in mind. Personally, I always use #2, to ensure that I am opening the `*`.mny file that I want.
-
-
 
 
 
