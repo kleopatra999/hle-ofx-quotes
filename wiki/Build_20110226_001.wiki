@@ -51,18 +51,5 @@ CIG786,MUTF_CA:CIG1786,TRUE
 }}}
   Note: this will yield TWO entries (in this case CIG686, CIG786) in the generated OFX file.
 }}}
-* Add a new concept call *Quote Profile* to make it easier to switch
-    * OFX account id
-    * Currency
-  User can choose a *Quote Profile* from file menu
-{{{
-File -> Quote Profies -> USD Proffile
-File -> Quote Profies -> CAN Proffile
-}}}
-  Input to populate above menu come from .properties file under directory *profiles/*
-  Property file will key-value pair looking like this
-{{{
-name: USD Profile
-accountid: 123456
-currency: USD
-}}}
+  * New entry
+  * New entry
