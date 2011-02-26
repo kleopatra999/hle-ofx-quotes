@@ -1,6 +1,4 @@
-#summary Build_20110226_001 Release Notes (DRAFT)
-
-= DRAFT =
+#summary Build_20110226_001 Release Notes
 
 = Introduction =
 
@@ -115,4 +113,59 @@ fi.name=FI Sample
 fi.name=Fidelity
 }}}
   # Popup menu, select *Save*. Check to see if the row column value for *Name* is changed from "FI Sample" to "Fidelity"
+  # Now go to http://www.ofxhome.com/ and search for "Fidelity Investments", you should get the following information
+{{{
+FI Id	7776
+FI Org	fidelity.com
+FI Url	https://ofx.fidelity.com/ftgw/OFX/clients/download
+FI Broker Id	fidelity.com
+}}}
+  # Edit "Properties", set those values as
+{{{
+fi.id=7776
+fi.org=fidelity.com
+fi.url=https://ofx.fidelity.com/ftgw/OFX/clients/download
+fi.brokerId=fidelity.com
+}}}
+  # Also, change the OFX version to 2
+{{{
+ofx.version=1
+TO
+ofx.version=2
+}}}
+  # Popup menu, select *Save*.  
+  # Now click on "Download" button. You should get an error since we have not set the userName and password. 
+    * Look in the "Status" column in table (top), should show ERROR
+    * Switch over to "Download Error" tab (bottom), to get more detail
+{{{
+java.io.IOException: ERROR Error occurred logging in
+...
+}}}
+   # Now edit "Properties" to enter your username, password and acccount id.
+{{{
+user.id=id123456
+user.password=password654321
+  TO
+user.id=YOUR_ACTUAL_FIDELITY_LOGIN
+user.password=YOUR_ACTUAL_FIDELITY_PASSWORD
+
+account.1.id=123456789
+  TO
+account.1.id=YOUR_ACTUAL_FIDELITY_PASSWORD
+}}}
+  # Popup menu, select *Save*.  
+  # Now click on "Download" button. Provided that you have entered the correct username, password and account id, you have get a SUCCESS status.
+
+== Buttons ==
+  * Refresh: reload the table. Data are stored in a directory named *fi/* in current directory (where the `*`.jar file is located.
+  * Download: download statement for the selected row(s)
+  * Import: import the downloaded statement for the selected row(s) into Microsoft Money.
+  * Download All: download statements for all rows
+  * Import All: import the downloaded statement for all rows into Microsoft Money.
+
+== Getting more help ==
+Hope this is enough to get you started, for questions/comments
+  * Check out the wiki: https://code.google.com/p/hle-ofx-quotes/w/list
+  * Ask question at: http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
+  * Log a bug: https://code.google.com/p/hle-ofx-quotes/issues/list
 
