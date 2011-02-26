@@ -34,8 +34,8 @@ Edit -> Quotes -> Randomize Share Count -> set to false
 }}}
   Why this change is needed?
   For MS2005UK to update its price, we need to force a transaction to be recorded. Previously, randomized share count will sometimes yield 
-    * (1) adding shares, sometimes 
-    * (2) removing shares. 
+    * (1) adding shares
+    * sometimes (2) removing shares. 
   When (2) happens, prices are not updated. Making the share count incrementally increasing will ensure that we always add shares. Will increase in .001 increment and wrap around at .999 shares.
 
   * For unit price, now generate 6 decimal place on OFX file. This will fix a previous problem where .49 GBX price is converted into .00 GBP. 
