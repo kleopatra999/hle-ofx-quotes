@@ -169,10 +169,13 @@ Hope this is enough to get you started, for questions/comments
   * Check out the wiki: https://code.google.com/p/hle-ofx-quotes/w/list
   * Ask question at: http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
   * Log a bug: https://code.google.com/p/hle-ofx-quotes/issues/list
+  * Look up your OFX settings: http://microsoftmoneyoffline.wordpress.com/look-up-your-ofx-settings/
+  * More OFX download settings: http://microsoftmoneyoffline.wordpress.com/2010/10/06/cal-learners-review-fidelity-401k-citi-card-and-vanguard-account-info/
+
 
 == Things that are being worked on ==
-  * Make it easier to enter the OFX info (url, broker id ...)
-  * Make it easier to look up the account id and enter them
+  * Make it easier to enter the OFX info (url, broker id ...). We can make "web service" calls.
+  * Make it easier to look up the account id and enter them. We can ask the financial institution on behalf of user.
   * How does user know when to use OFX v2, v1?
   * Encrypt user credential the way PocketSense does it?
 
