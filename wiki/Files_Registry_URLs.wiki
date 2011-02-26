@@ -21,7 +21,7 @@ HKCU\Software\JavaSoft\Prefs\le\com\tools\moneyutils\ofx\quotes
 C:\Users\HUNGLE~1\AppData\Local\Temp\quotes8452759604132664180.ofx
 }}}
   These files will be deleted on exit.
-  * Files under directory *fi/* if exist. These files are used for the 'Download Statements' feature.
+  * Read/Write files under directory *fi/* if exist. These files are used for the 'Download Statements' feature.
 
 == URLs ==
   * Yahoo: download.finance.yahoo.com
