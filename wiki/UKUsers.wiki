@@ -11,10 +11,10 @@ Updating quote prices for UK users is sort of working with some rough spots. I a
 = Known working path =
 
   * Use the ft.com quote source to get UK stocks and fund price.
-  * Use the latest test build (http://code.google.com/p/hle-ofx-quotes/downloads/list) which has support for randomized share count (it does sounds scary: financial info and randomized but this only for the Dummy account).
-  * Make sure you set the randomized setting
+  * Use the latest test build (http://code.google.com/p/hle-ofx-quotes/downloads/list) which has support for *Incrementally Increased Share Count*
+  * Make sure you set the *Incrementally Increased Share Count*
 {{{
-Edit -> Randomized share count (set to true)
+Edit -> Quotes -> Incrementally Increased Share Count -> set to true
 }}}
   * Use the mapper.csv file to map the ft.com symbol into the matching symbol in Microsoft Money.
   If you have managed funds, make sure you use mapper.csv file to give the tool a hint that a particular security is a managed fund. For example:
@@ -34,10 +34,11 @@ Edit -> Force <INVTRANLIST> (set to true)
   * Best coverage for UK funds. Yahoo does not come close.
   * Alternative is Google Portfolio if you don't want to manually download the CSV file.
   * *Please don't use Yahoo*: Yahoo does NOT return security currency and I will assume the price is in USD which will likely to be wrong. Stay with ft.com. It is your best bet.
+  * *If you must use Yahoo*, make sure you use the 'QuotesSourceCurrency' column in mapper.csv file to specify the correct incoming currency.
 
-=== Why randomized share count ===
+=== Why 'Incrementally Increased Share Count' ===
   
-  * In US Sunset version, when we import in a zero share count. MM will happy update the price *BUT* for MM05UK, Microsoft Money seems to ignore zero share count, we need to force a actual transaction before MM will pick up the price data. Randomized share count ensure that each time you import a statement, MM will have to adjust: either to add or remove a transaction thus updating the price.
+  * In US Sunset version, when we import in a zero share count. MM will happy update the price *BUT* for MM05UK, Microsoft Money seems to ignore zero share count, we need to force a actual transaction before MM will pick up the price data. 'Incrementally Increased Share Count' ensure that each time you import a statement, MM will have to adjust: by adding new share in a transaction thus updating the price. Share count will be increase by 0.001 increment and will wrap around at 0.999. This share count only affect the *Dummy* account.
 
 === Why mapper.csv file? ===
   
