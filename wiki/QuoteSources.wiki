@@ -18,3 +18,14 @@ Standard Life UK Smaller Companies Acc Inst Shares,STUSCA,Feb 07 2011 00:00 GMT,
 }}}
 
 *CAVEAT*: We are at the mercy of the *free* quote source. We've seen quote source (specifically Yahoo) returning wrong data in the past. Make sure you have good backup so that you can back out of a bad import.
+
+= ft.com =
+
+Currently, the following columns are used from ft.com's results.csv file
+  * *Name*: Name of security. For example: 'Fidelity Moneybuilder Growth ISA Class NAV'
+  * *Symbol: Exchange*: Symbol name and exchange (optional). For example: FIMGC
+  * *Quote Date & Time*: date and time of the quote price. For example: 'Feb 07 2011 00:00 GMT'
+  * *Last Price*: price. For example: 57.89
+  * *Currency for Last Price*: currency for price. For example: GBX
+
+Why aren't you using values for other columns like day high, yield ...? The import process goes through an intermediate interface called OFX importing which has its limitation. OFX does not have interface to import in value of such columns.
