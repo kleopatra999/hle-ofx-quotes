@@ -142,7 +142,7 @@ ofx.version=2
 java.io.IOException: ERROR Error occurred logging in
 ...
 }}}
-   # Now edit "Properties" to enter your username, password and acccount id.
+  # Now edit "Properties" to enter your username, password and acccount id.
 {{{
 user.id=id123456
 user.password=password654321
