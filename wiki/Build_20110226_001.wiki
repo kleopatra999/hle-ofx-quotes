@@ -20,6 +20,8 @@ ID	Summary
 10	"Randomized" share count does not always work (only if shares are added)
 }}}
 
+  * Start new codes to support downloading statement. See section *Download Statement* below.
+
 = Download = 
   * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20110226_001.jar
 
@@ -55,8 +57,8 @@ VINCI,DG.NX,FALSE,FALSE,EUR
 File -> Quote Profies -> USD Proffile
 File -> Quote Profies -> CAN Proffile
 }}}
-  Input to populate above menu come from `*`.properties file under directory *profiles/*
-  Property file will key-value pair looking like this
+  Input to populate above menu come from `*`.properties file under directory *profiles/*.
+  Property file will have key-value pair looking like this
 {{{
 name: USD Profile
 accountid: 123456
@@ -71,3 +73,46 @@ CIG786,MUTF_CA:CIG1786,TRUE
   Note: this will yield TWO entries (in this case CIG686, CIG786) in the generated OFX file.
 
  * Start initial support for external exchange rate table. Please see he comment in this issue: http://code.google.com/p/hle-ofx-quotes/issues/detail?id=5&q=label%3ABuild_20110226_001
+
+= Download Statement =
+First this feature is brand-new code so it still has a lot of rough edges. So please try it only if you are willing to put up with some manual editing and the possibility that it might NOT work for your particular case.
+
+What is it? For downloading OFX statement from bank, brokerage, credit card company.
+
+  * The low-level OFX "engine" is pretty stable: generating OFX file, sending request, receiving responses.
+  * The on-board user experience (how to first create the user account) is not all there yet. Current mode of operation is that you have to
+    * edit the content of a `*`.properties file
+    * try, see error, fix up values in `*`.properties file
+    * repeat until success
+
+I've added a new top-level tab called *Statements* at the bottom, select that tab will give you the "Statement" view
+
+I will give more details in coming day but here is quick recipe
+  # Bottom tab: switch to *Statements*
+  # Create a new *Financial Institution*
+{{{
+File -> New -> Financial Institution
+}}}
+  # Enter a name. For example: *Fidelity*, click *OK*
+  # Top table is updated with new row. Select new row with column name *FI Sample*
+  # Bottom tab name "Properties" is updated and show something like this:
+{{{
+# Name of the Financial Institution (FI)
+fi.name=FI Sample
+
+# A good resource to obtain OFX info for your FI http://www.ofxhome.com/
+
+# FI Id
+# Some FI has id. Others don't. When in doubt, keep this value empty
+fi.id=1234
+# FI Org
+...
+}}}
+  # Edit the content of "Properties" (Notes: you can use control-c, control-v for copy, paste), change value of
+{{{
+fi.name=FI Sample
+  TO
+fi.name=Fidelity
+}}}
+  # Popup menu, select *Save*. Check to see if the row column value for *Name* is changed from "FI Sample" to "Fidelity"
+
