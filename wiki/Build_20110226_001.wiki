@@ -70,7 +70,7 @@ CIG786,MUTF_CA:CIG1786,TRUE
 }}}
   Note: this will yield TWO entries (in this case CIG686, CIG786) in the generated OFX file.
 
- * Start initial support for external exchange rate table. Please see he comment in this issue: http://code.google.com/p/hle-ofx-quotes/issues/detail?id=5&q=label%3ABuild_20110226_001
+ * Start initial support for external exchange rate table. Please see the comment in this issue: http://code.google.com/p/hle-ofx-quotes/issues/detail?id=5&q=label%3ABuild_20110226_001
 
 = Download Statement =
 First this feature is brand-new code so it still has a lot of rough edges. So please try it only if you are willing to put up with some manual editing and the possibility that it might NOT work for your particular case.
@@ -168,4 +168,3 @@ Hope this is enough to get you started, for questions/comments
   * Check out the wiki: https://code.google.com/p/hle-ofx-quotes/w/list
   * Ask question at: http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
   * Log a bug: https://code.google.com/p/hle-ofx-quotes/issues/list
-
