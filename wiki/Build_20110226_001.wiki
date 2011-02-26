@@ -9,12 +9,60 @@ Build_20110226_001 Release Notes
 = Changes =
   * http://code.google.com/p/hle-ofx-quotes/issues/list?can=2&q=label%3ABuild_20110226_001
 
+{{{
+ID	Summary
+2	Yahoo downloads prices in pounds in error for pence
+3	Multiple entries in the csv file for the same investment
+4	Enhancement Request: Support for multiple Accounts to Import OFX
+5	Support an external exchange rate table
+6	Conversion from GBX to GBP yield 0.000
+7	Add support for specifying quote-source-currency in mapper.csv
+10	"Randomized" share count does not always work (only if shares are added)
+}}}
+
 = Download = 
   * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20110226_001.jar
 
 = Details =
+  * *IMPORTANT* for UK user, please enable the following new setting *Incrementally Increased Share Count*
+{{{
+Edit -> Quotes -> Incrementally Increased Share Count -> set to true
+}}}
+  This setting supersedes the *Randomize Share Count* which is deprecated and will be remove in next build. Please set *Randomize Share Count* to false
+{{{
+Edit -> Quotes -> Randomize Share Count -> set to false
+}}}
+  Why this change is needed?
+  For MS2005UK to update its price, we need to force a transaction to be recorded. Previously, randomized share count will sometimes yield 
+    * (1) adding shares, sometimes 
+    * (2) removing shares. 
+  When (2) happens, prices are not updated. Making the share count incrementally increasing will ensure that we always add shares. Will increase in .001 increment and wrap around at .999 shares.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * I've added an additional column in the mapper.cvs called "QuotesSourceCurrency" that you can use to specify the currency of a security if the quote source is not providing it. Example:
+{{{
+MSMoneySymbol,QuotesSourceSymbol,IsMutualFund,IsOptions,QuotesSourceCurrency
+VINCI,DG.NX,FALSE,FALSE,EUR
+}}}
+  Use case: you want to get a quote price for a non-US security from Yahoo quote source (which will likely to return the the price in GPX or GPB).
+  * Support multiple entries of same QuoteSourceSymbol mapping to ONE MsMoneySymbol
+{{{
+CIG686,MUTF_CA:CIG1786,TRUE
+CIG786,MUTF_CA:CIG1786,TRUE
+}}}
+  Note: this will yield TWO entries (in this case CIG686, CIG786) in the generated OFX file.
+}}}
+* Add a new concept call *Quote Profile* to make it easier to switch
+    * OFX account id
+    * Currency
+  User can choose a *Quote Profile* from file menu
+{{{
+File -> Quote Profies -> USD Proffile
+File -> Quote Profies -> CAN Proffile
+}}}
+  Input to populate above menu come from .properties file under directory *profiles/*
+  Property file will key-value pair looking like this
+{{{
+name: USD Profile
+accountid: 123456
+currency: USD
+}}}
