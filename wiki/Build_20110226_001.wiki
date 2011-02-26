@@ -82,6 +82,7 @@ What is it? For downloading OFX statement from bank, brokerage, credit card comp
     * edit the content of a `*`.properties file
     * try, see error, fix up values in `*`.properties file
     * repeat until success
+  * Does NOT have the "scrubber" feature (modifying the OFX responses) that PocketSense provides.
 
 I've added a new top-level tab called *Statements* at the bottom, select that tab will give you the "Statement" view
 
@@ -168,3 +169,11 @@ Hope this is enough to get you started, for questions/comments
   * Check out the wiki: https://code.google.com/p/hle-ofx-quotes/w/list
   * Ask question at: http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
   * Log a bug: https://code.google.com/p/hle-ofx-quotes/issues/list
+
+== Things that are being worked on ==
+  * Make it easier to enter the OFX info (url, broker id ...)
+  * Make it easier to look up the account id and enter them
+  * How does user know when to use OFX v2, v1?
+  * Encrypt user credential the way PocketSense does it?
+
+  
