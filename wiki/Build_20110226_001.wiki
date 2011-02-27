@@ -152,7 +152,7 @@ user.password=YOUR_ACTUAL_FIDELITY_PASSWORD
 
 account.1.id=123456789
   TO
-account.1.id=YOUR_ACTUAL_FIDELITY_PASSWORD
+account.1.id=YOUR_ACTUAL_FIDELITY_ACCOUNT_ID
 }}}
   # Popup menu, select *Save*.  
   # Now click on "Download" button. Provided that you have entered the correct username, password and account id, you have get a SUCCESS status.
