@@ -1,0 +1,36 @@
+#summary Tips for downloading statements
+
+= Introduction =
+
+Tips and tricks for downloading statements
+
+
+= OFX info =
+
+Source for OFX info: url, brokers ID, ...
+  * Look up your OFX settings: http://microsoftmoneyoffline.wordpress.com/look-up-your-ofx-settings/
+  * More OFX download settings: http://microsoftmoneyoffline.wordpress.com/2010/10/06/cal-learners-review-fidelity-401k-citi-card-and-vanguard-account-info/ 
+  * OFX home: http://www.ofxhome.com/
+
+== Vanguard ==
+ * Make sure to use *ofx.version=2*. If you use *ofx.version=1* and you have no transaction during the download period (default: last 30 days), the imported OFX file will cause MM to crash. From what I see in the v1 response, the OFX does not include the {{{<SECLIST>}}}. For Vanguard, this what I use
+{{{
+# Financial Institution (FI) info
+# http://www.ofxhome.com/
+# FI Id
+#fi.id=
+# FI Org
+fi.org=Vanguard
+# FI Url
+fi.url=https://vesnc.vanguard.com/us/OfxDirectConnectServlet
+# FI Broker Id
+fi.brokerId=vanguard.com
+
+# ofx version
+# 1 or 2
+ofx.version=2
+
+# Request type
+# investment (INVSTMTTRNRQ): Investment Statement Download
+requestType=investment
+}}}
