@@ -28,4 +28,6 @@ Currently, the following columns are used from ft.com's results.csv file
   * *Last Price*: price. For example: 57.89
   * *Currency for Last Price*: currency for price. For example: GBX
 
-*Question*: Why aren't you using values for other columns like day high, yield ...? The import process goes through an intermediate interface called OFX importing which has its limitation. OFX does not have interface to import in value of such columns.
+*Question*: Why aren't you using values for other columns like day high, yield ...? 
+
+*Answer*: The import process goes through an intermediate interface called OFX importing which has its limitation. OFX does not have interface to import in value of such columns.
