@@ -15,7 +15,7 @@ Source for OFX info: url, brokers ID, ...
 == *fi* directory ==
 *Financial Institution* data are stored directory *fi*.
   * Each sub directory represents an FI
-  * The directory name is used as the FI's name if {{{fi.name}} is not specified
+  * The directory name is used as the FI's name if {{{fi.name}}} is not specified
   * To tell to ignore a directory, name it with '-' (minus, or dash) in front. For example, *-ignoreMe*.
   * To tell the to skip a FI during download, just comment out the {{{fi.url}}} line. For example
 {{{
