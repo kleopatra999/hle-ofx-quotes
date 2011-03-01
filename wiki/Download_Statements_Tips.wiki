@@ -82,7 +82,6 @@ fi.id=1001
 fi.org=Hibernia
 # FI Url
 fi.url=https://onlinebanking.capitalone.com/ofx/process.ofx
-#fi.url=https://onlinebanking.capitaloneX.com/ofx/process.ofx
 # FI Broker Id
 #fi.brokerId=
 
@@ -93,6 +92,81 @@ ofx.version=1
 # Request type
 requestType=bank
 }}}
+
+== Fidelity ==
+  * Known working OFX values:
+{{{
+fi.name=Fidelity
+# Financial Institution (FI) info
+# http://www.ofxhome.com/
+# FI Id
+fi.id=7776
+# FI Org
+fi.org=fidelity.com
+# FI Url
+fi.url=https://ofx.fidelity.com/ftgw/OFX/clients/download
+# FI Broker Id
+fi.brokerId=fidelity.com
+
+# ofx version
+# 1 or 2
+ofx.version=2
+
+# Request type
+# investment (INVSTMTTRNRQ): Investment Statement Download
+requestType=investment
+}}}
+
+== Fidelity Netbenefits ==
+  * Known working OFX values:
+{{{
+fi.name=Fidelity Netbenefits
+# Financial Institution (FI) info
+# http://www.ofxhome.com/
+# FI Id
+fi.id=8288
+# FI Org
+fi.org=nbofx.fidelity.com
+# FI Url
+fi.url=https://nbofx.fidelity.com/netbenefits/ofx/download
+# FI Broker Id
+fi.brokerId=nbofx.fidelity.com
+
+# ofx version
+# 1 or 2
+ofx.version=2
+
+# Request type
+# investment (INVSTMTTRNRQ): Investment Statement Download
+requestType=investment
+}}}
+
+== ING DIRECT ==
+  * You need to request access for using *personal financial management tool*. 
+Go to the 'My Info' section of ING Direct and enable Personal Finance Access Code.  You then use this code instead of your web password.
+  * Response has problem. The response from ING has a missing required field {{{<DTEND>}}} in {{{<BANKTRANLIST>}}}. I think PocketSense has a fix for that.
+  * Known working OFX values:
+{{{
+fi.name=ING DIRECT
+# Financial Institution (FI) info
+# http://www.ofxhome.com/
+# FI Id
+fi.id=031176110
+# FI Org
+fi.org=ING DIRECT
+# FI Url
+#fi.url=https://ofx.ingdirect.com/OFX/ofx.html
+# FI Broker Id
+fi.brokerId=nbofx.fidelity.com
+
+# ofx version
+# 1 or 2
+ofx.version=1
+
+# Request type
+requestType=bank
+}}}
+
 == Vanguard ==
   * Make sure to use *ofx.version=2*. If you use *ofx.version=1* and you have no transaction during the download period (default: last 30 days), the imported OFX file will cause MM to crash. From what I see in the v1 response, the OFX does not include the {{{<SECLIST>}}}.
   * Known working OFX values:
