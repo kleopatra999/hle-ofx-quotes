@@ -142,8 +142,7 @@ requestType=investment
 }}}
 
 == ING DIRECT ==
-  * You need to request access for using *personal financial management tool*. 
-Go to the 'My Info' section of ING Direct and enable Personal Finance Access Code.  You then use this code instead of your web password.
+  * You need to request access for using *personal financial management tool*. Go to the 'My Info' section of ING Direct and enable Personal Finance Access Code.  You then use this code instead of your web password.
   * Response has problem. The response from ING has a missing required field {{{<DTEND>}}} in {{{<BANKTRANLIST>}}}. I think PocketSense has a fix for that.
   * Known working OFX values:
 {{{
