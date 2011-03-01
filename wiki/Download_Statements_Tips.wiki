@@ -15,6 +15,8 @@ Source for OFX info: url, brokers ID, ...
 == Vanguard ==
  * Make sure to use *ofx.version=2*. If you use *ofx.version=1* and you have no transaction during the download period (default: last 30 days), the imported OFX file will cause MM to crash. From what I see in the v1 response, the OFX does not include the {{{<SECLIST>}}}. For Vanguard, this what I use
 {{{
+fi.name=Vanguard
+
 # Financial Institution (FI) info
 # http://www.ofxhome.com/
 # FI Id
