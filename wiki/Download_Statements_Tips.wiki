@@ -70,6 +70,29 @@ ofx.version=1
 requestType=bank
 }}}
 
+== Capital One Bank ==
+  * Known working OFX values:
+{{{
+fi.name=Capital One Bank
+# Financial Institution (FI) info
+# http://www.ofxhome.com/
+# FI Id
+fi.id=1001
+# FI Org
+fi.org=Hibernia
+# FI Url
+fi.url=https://onlinebanking.capitalone.com/ofx/process.ofx
+#fi.url=https://onlinebanking.capitaloneX.com/ofx/process.ofx
+# FI Broker Id
+#fi.brokerId=
+
+# ofx version
+# 1 or 2
+ofx.version=1
+
+# Request type
+requestType=bank
+}}}
 == Vanguard ==
   * Make sure to use *ofx.version=2*. If you use *ofx.version=1* and you have no transaction during the download period (default: last 30 days), the imported OFX file will cause MM to crash. From what I see in the v1 response, the OFX does not include the {{{<SECLIST>}}}.
   * Known working OFX values:
