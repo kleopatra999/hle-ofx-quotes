@@ -24,7 +24,7 @@ Before you do anything, make sure you have backup or know how to roll back (http
 
 = Prerequisites =
 
-Your will need a recent version of Java: 1.6 and later is best. To check your Java version
+Your will need a recent version of *Java: 1.6* and later is best. To check your Java version
 {{{
 # Start cmd window
 Run -> cmd 
