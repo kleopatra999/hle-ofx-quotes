@@ -22,6 +22,65 @@ Source for OFX info: url, brokers ID, ...
 #fi.url=https://olbp.bankofthewest.com/ofx0002/ofx_isapi.dll
 }}}
 
+= Quick start =
+  I've created a sample directory that you can use as a starting point.
+
+== Populate the fi/ directory ==
+  # Download file fi.zip from http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=fi.zip
+  # Save fi.zip to same directory as your hleOfxQuotes`*`.jar file
+  # Unzip to get directory fi/
+  # Start hleOfxQuotes
+  # Will work best if you have an account from one of the following institutions
+{{{
+ae - American Express (credit card)
+bankOfTheWest - Bank of the West (checking account)
+capitalOneBank - Capital One (checking account)
+fidelity - Fidelity (investment)
+fidelityNetbenefits - Fidelity (401k)
+vanguard - Vanguard (investment)
+}}}
+  # Otherwise, create a new directory under fi/. Copy a fi.property file from existing directory to your new directory. If hleOfxQuotes is running, in *Statements* tab, click on *Refresh* to update the FI list.
+  
+== Configure an FI (Financial Institution) ==
+  For each fi, you will need to configure the following
+  * Which URL to use?
+  * Which login/password to use?
+  * Which account(s)?
+
+== Example ==
+  # First, let's configure the URL.
+  # Select *American Express* in the top-panel list
+  # In bottom panel, in *Properties* tab, find
+{{{
+#fi.url=https://online.americanexpress.com/myca/ofxdl/desktop/desktopDownload.do?request_type=nl_ofxdownload
+}}}
+  # uncomment that line out
+{{{
+fi.url=https://online.americanexpress.com/myca/ofxdl/desktop/desktopDownload.do?request_type=nl_ofxdownload
+}}}
+  # type control-s or popup-menu and choose "Save". From here on, I will refer this action as "Save changes"
+  # Click on "Download". That will attempt to download statement for the currently-selected FI. In this case: American Express.
+  # At this point, you should get an error. You can click on the "Download Error" tab to see more details.
+  # Next, let's configure login/password.
+  # Find lines
+{{{
+user.id=id123456
+user.password=password654321
+}}}
+  # Change them to your login and password for American Express. Save changes.
+  # Now click on "Download". 
+  # You should now have a success status. This means we are able to connect and login. But if you look at the response in tab "OFX Response", you should see error because we have not configured the account information.
+  # To configure the account information. Go back to tab "Properties". Look for lines:
+{{{
+# List of accounts that you have with this FI
+# Number of accounts
+accounts=1
+# Account ID #1
+account.1.id=123456789
+}}}
+  # Change those values to match your information. Save changes.
+  # Now click on "Download". Examine response in table "OFX Response"
+
 == American Express ==
   * Known working OFX values:
 {{{
