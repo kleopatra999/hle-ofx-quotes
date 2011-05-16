@@ -30,7 +30,7 @@ At top-level,
 || appid || TODO || Client app id to be present to server ||
 || appver || TODO || Client app  ver to be present to server ||
 || mininterval || startDate || In hleOfxQuotes, you can specify absolute date '20110101' or offset '-30'||
-|| timeOffset ||  ??? || Not sure ||
+|| timeOffset ||  TODO || Add (-subtract) number of hours to statement DTASOF field(s).  Default = zero. ||
 
 == Account information ==
 
