@@ -4,12 +4,34 @@
 
 = Introduction =
 
-Add your content here.
+For those currently using PocketSense and want to try out the "Statement Download" feature in hleOfxQuotes, I am documenting equivalent concepts or settings that you are familiar with from the sites.dat file.
 
+You should also see the *Quick Start* section at http://code.google.com/p/hle-ofx-quotes/wiki/Download_Statements_Tips
 
-= Details =
+== Site vs fi dir ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+At top-level, 
+  * PocketSense stores site information (URL, fi org, fi id ...) in file sites.dat in a list of `<site>....</site>` block.
+  * hleOfxQuote stores the same information in a directory structure
+{{{
+  fi -- FI_001 -- fi.properties
+     -- FI_002 -- fi.properties
+     -- FI_003 -- fi.properties
+}}}
+
+== Key value pair ==
+
+|| *PocketSense* || *hleOfxQuotes* || *Comments* ||
+|| SiteName || fi.name || Name of the Financial Institution (FI) ||
+|| AcctType || requestType || CCSTMT=creditCard, INVSTMT=investment, BASTMT=bank ||
+|| fiorg || fi.org || FI Org ||
+|| fid || fi.id || FI Id. Some FI has id. Others don't. When in doubt, keep this value empty ||
+|| url || fi.url || FI Url. In hleOfxQuotes, if you comment it out. That FI will be skipped during download phase. ||
+|| bankid || account.1.bankId || Only meaningful if requestType is bank. Often is the bank's routing number||
+|| brokerid || fi.brokerId || FI Broker Id. Some FI don't have Broker ID. When in doubt, keep this value empty ||
+|| appid || TODO || Client app id to be present to server ||
+|| appver || TODO || Client app  ver to be present to server ||
+|| mininterval || startDate || ||
+|| timeOffset ||  ??? || Not sure ||
+
+ 
