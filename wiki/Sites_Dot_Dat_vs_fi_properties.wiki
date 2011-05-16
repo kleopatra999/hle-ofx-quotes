@@ -29,7 +29,7 @@ At top-level,
 || brokerid || fi.brokerId || FI Broker Id. Some FI don't have Broker ID. When in doubt, keep this value empty ||
 || appid || TODO || Client app id to be present to server ||
 || appver || TODO || Client app  ver to be present to server ||
-|| mininterval || startDate || ||
+|| mininterval || startDate || In hleOfxQuotes, you can specify absolute date '20110101' or offset '-30'||
 || timeOffset ||  ??? || Not sure ||
 
 == Account information ==
