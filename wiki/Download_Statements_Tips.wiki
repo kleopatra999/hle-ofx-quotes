@@ -80,6 +80,14 @@ account.1.id=123456789
 }}}
   # Change those values to match your information. Save changes.
   # Now click on "Download". Examine response in table "OFX Response"
+  # If you have multiple accounts from the same FI, change value of
+{{{
+accounts=2
+}}}
+  # Then add the second account using syntax
+{{{
+account.2.id=123456789
+}}}
 
 == American Express ==
   * Known working OFX values:
