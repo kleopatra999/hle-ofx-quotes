@@ -27,3 +27,4 @@ C:\Users\HUNGLE~1\AppData\Local\Temp\quotes8452759604132664180.ofx
   * Yahoo: download.finance.yahoo.com
   * Yahoo API (for looking up options): query.yahooapis.com and finance.yahoo.com
   * Google Portfolio: finance.google.com
+  * If you are using "Download Statements", any URl you specified in your *fi.properties* file.
