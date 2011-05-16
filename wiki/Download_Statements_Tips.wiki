@@ -89,6 +89,9 @@ accounts=2
 account.2.id=123456789
 }}}
 
+= FI specific info =
+  Information that is specific per FI.
+
 == American Express ==
   * Known working OFX values:
 {{{
