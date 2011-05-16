@@ -9,6 +9,11 @@ Build_20110515_001 Release Notes
 {{{
 Tools -> Import dialog auto-click
 }}}
+  * I disable the previously available menu:
+{{{
+File -> New -> Financial Institution
+}}}
+by mistake. I will fix this in the next build.
 
 = Download = 
   * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20110515_001.jar
