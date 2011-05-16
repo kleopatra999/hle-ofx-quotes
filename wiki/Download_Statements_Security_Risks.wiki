@@ -1,0 +1,20 @@
+#summary Download statements, what security risks are there?
+
+= Introduction =
+
+I want to try the "Download Statements" feature, what security risks are there? What is my exposure?
+
+
+== Source codes ==
+
+At the very top level, source codes are not available so you will not be able to inspect the codes to see if I am doing *bad* things to your stuffs such as secretly transfer your *.mny file to some remote server.
+
+I've tried to document what files, registry, URLs this tools will use here: http://code.google.com/p/hle-ofx-quotes/wiki/Files_Registry_URLs
+
+== Username/password exposure ==
+
+  * Username, password are not encrypted. Available in plain-text in fi.properties file.
+  * On my TODO list: encrypt username/password in storage.
+  * Username, password are in plain text in stored request/response files.
+  * On my TODO list: keep OFX request/response in memory only.
+  * Personally, I run from a TrueCrypt filesystem (http://www.truecrypt.org/) which mitigates most of the above concern.
