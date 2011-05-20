@@ -6,17 +6,19 @@ I want to try the "Download Statements" feature, what security risks are there? 
 
 == Your Money file ==
 
-This tools does not modify your Money file until you *specifically tell it to do so*. In both
+This tools does not modify your Money file until you *specifically tell it to do so*. In both cases:
   # Quotes download
   # and Statement download
-There always two steps:
-  # Generate, download the *.ofx files
+There are always two steps:
+  # Generate, download the `*`.ofx files
   # Import the OFX files into Money
-You to specifically click a button to *Import* before the second steps will occur. Nothing change to your MM files until you explicitly said so.
+You have to specifically click a button to *Import* before the second steps will occur. Nothing change to your MM files until you explicitly said so.
 
 == Source codes ==
 
-This has been raised before. Please see: http://code.google.com/p/hle-ofx-quotes/wiki/Source_Codes. I trust that you are a grown up and can calculate the risk/reward ratio and make your own decision. You've done that with other
+This has been raised before. Please see: http://code.google.com/p/hle-ofx-quotes/wiki/Source_Codes. 
+
+I trust that you are a grown up and can calculate the risk/reward ratio yourself and make your own decision. You've done that with other
 non-source, free software you are currently running on your machine. 
 
 So let me give you the following points:
