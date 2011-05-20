@@ -12,7 +12,7 @@ This tools does not modify your Money file until you *specifically tell it to do
 There are always two steps:
   # Generate, download the `*`.ofx files
   # Import the OFX files into Money
-You have to specifically click a button to *Import* before the second steps will occur. Nothing change to your MM files until you explicitly said so.
+You have to specifically click a button to *Import* before the second steps will occur. Nothing change to your MM files until you explicitly say so.
 
 == Source codes ==
 
