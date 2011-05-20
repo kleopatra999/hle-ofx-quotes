@@ -4,12 +4,26 @@
 
 I want to try the "Download Statements" feature, what security risks are there? What is my exposure?
 
+== This tools does not modify your Money file ==
+
+until you *specifically tell it to do so*. In both
+  # Quotes download
+  # and Statement download
+There always two steps:
+  # Generate, download the *.ofx files
+  # Import the OFX files into Money
+You to specifically click a button to *Import* before the second steps will occur. Nothing change to your MM files until you explicitly said so.
 
 == Source codes ==
 
-At the very top level, source codes are not available so you will not be able to inspect the codes to see if I am doing *bad* things to your stuffs such as secretly transfer your `*`.mny file to some remote server.
+This has been raised before. Please see: http://code.google.com/p/hle-ofx-quotes/wiki/Source_Codes. I trust that you are a grown up and can calculate the risk/reward ratio and make your own decision. You've done that with other
+non-source, free software you are currently running on your machine. 
 
-I've tried to document what files, registry, URLs this tools will use here: http://code.google.com/p/hle-ofx-quotes/wiki/Files_Registry_URLs
+So let me give you the following points:
+  * Yes there is a risk: source codes are not available so you will not be able to inspect the codes to see if I am doing *bad* things to your stuffs such as secretly transfer your `*`.mny file to some remote server.
+  * We have others who are using this tools. Check the count on the download page. The tool has been available almost two years now. As far as I know, no one has complained about privacy issues.
+  * I've tried to document what files, registry, URLs this tools will use here: http://code.google.com/p/hle-ofx-quotes/wiki/Files_Registry_URLs
+  * I believe I've been a good citizen to the online Microsoft Money community: offer help in area I have expertise on, when I could. A quick search through the newsgroup will show that.
 
 == Username/password exposure ==
 
