@@ -1,4 +1,4 @@
-#summary DRAFT - The first N steps
+#summary The first N steps
 
 They typical first N steps going from scratch having prices updated.
 
