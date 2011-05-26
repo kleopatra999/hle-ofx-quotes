@@ -53,6 +53,9 @@ Tools -> Import dialog auto-click -> uncheck the check mark
   * Price in MM does not update. See above on notes on price is update only *ONCE* a day.
   * MM indicates that the import statement has error. Look for a tool called OFXAnalyzer which can check the syntax. See where to get additional help below.
   
+=See also=
+  * http://code.google.com/p/hle-ofx-quotes/wiki/The_first_N_steps
+
 =Where to get help=
   * http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
   * http://social.microsoft.com/Forums/en-US/money/threads
