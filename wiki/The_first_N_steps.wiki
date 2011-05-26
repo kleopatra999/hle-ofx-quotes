@@ -1,6 +1,6 @@
 #summary DRAFT - The first N steps
 
-= DRAFT =
+They typical first N steps going from scratch having prices updated.
 
   * Download the latest {{{hleOfxQuotes-XXX.jar}}} file from http://code.google.com/p/hle-ofx-quotes/downloads/list
   * Save to a directory.
