@@ -13,7 +13,7 @@ Current treatment of currency setting.
 {{{
 <CURDEF>USD</CURDEF>
 }}}
-  * You can change that by user menu item
+  * You can change that by using menu item
 {{{
 Edit -> Quotes -> Currency
 }}}
