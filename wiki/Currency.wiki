@@ -4,7 +4,7 @@
 
 Current treatment of currency setting.
 
-*Caveat*: I am a US-based user. I don't use non-US and/or multi-currency. So I don't really have hand-on experience in this area. I'd love to understand it better and I am happy to take input on how to make it better.
+*Caveat*: I am a US-base user. I don't use non-US and/or multi-currency. So I don't really have hand-on experience in this area. I'd love to understand more and I am happy to take input on how to make it better.
 
 = Default Currency =
 
