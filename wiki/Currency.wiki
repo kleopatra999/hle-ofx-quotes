@@ -24,4 +24,4 @@ Edit -> Quotes -> Currency
   * Why the need? some quote source provides per security currency (Google), other does not (Yahoo). Also for user using multi-currency, we might have handle translating quoted currency into base currency (not sure).
   * You can provide per security currency via the mapper.csv file (see: [Build_20110226_001], look for *QuotesSourceCurrency*). See also the wiki [mapperDotCsv] page.
   * Currently, the ONLY currency translation is from GBX to GBP. This is more of a work-around/bug fix for user whose default currency is GBP but the quote source is quoting in GBX.
-  * There has been some discussion about having a currency exchange table and perform the appropriate conversion as needed. Nothing has been done since it appears the Microsoft automatic quote feed for UK user is still working.
+  * There has been some discussion about having a currency exchange table and perform the appropriate conversion as needed. Nothing has been done since it appears the Microsoft automatic quote feed for UK user is still working (main targeted users for this feature).
