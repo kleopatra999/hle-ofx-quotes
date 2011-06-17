@@ -1,0 +1,17 @@
+#summary Current treatment of currency setting
+
+= Introduction =
+
+Current treatment of currency setting.
+
+*Caveat*: I am a US-based user. I don't use non-US and/or multi-currency. So I don't really have hand-on experience in this area. I'd love to understand it better and I am happy to take input on how to make it better.
+
+= Default currency =
+
+  * Default: USD
+  * You can change that by user menu item
+{{{
+Edit -> Quotes -> Currency
+}}}
+  * If you need to switch between currencies, for example, you have two quote sources: one in USD and the other in EUR, see the notes [Build_20110226_001] on how to create a *Quote Profile* 
+  * 
