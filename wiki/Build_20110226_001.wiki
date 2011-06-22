@@ -59,7 +59,7 @@ File -> Quote Profies -> CAN Proffile
   Property file will have key-value pair looking like this
 {{{
 name: USD Profile
-accountid: 123456
+accountId: 123456
 currency: USD
 }}}
 
