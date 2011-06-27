@@ -17,7 +17,7 @@ Currently, there is no known path to change the currencies exchange rate via OFX
 
 This note documents approach *number 3*.
 
-Currently, there are two distinct tasks (we will simplify this at a later date).
+For now, there are two distinct tasks (we will simplify this at a later date).
   # Create a *fx.csv* file. This file contains the current rate
   # Update {{{*.mny}}} file using above file *fx.csv*
 
