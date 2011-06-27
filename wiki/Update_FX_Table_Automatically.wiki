@@ -1,0 +1,35 @@
+#summary Update MSMoney 'Currencies Rate' table automatically
+
+= DRAFT -
+
+= Introduction =
+
+This is an initial effort to make it possible to update the currencies exchange rate table automatically.
+
+*This feature is EXPERIMENTAL*. Please proceed with caution: test with a copy of your {{{*.mny}}} file first.
+
+
+= Details =
+
+Currently, there is no known path to change the currencies exchange rate via OFX file. To update, you will have to do one of the following:
+
+  # Update manually
+  # Use tool to mimic mouse-keyboard sequences
+  # Use tool to edit {{{*.mny}}} file directly
+
+This note documents approach *number 3*.
+
+Currently, there are two distinct tasks (we will simplify this at a later date).
+  # Create a *fx.csv* file. This file contains the current rate
+  # Update {{{*.mny}}} file using above file *fx.csv*
+
+== Creating fx.csv file ==
+  * You can use *hleOfxQuotes app* to create the *fx.csv* file for you.
+  * Get this version of *hleOfxQuotes app*: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20110626_001/hleOfxQuotes-Build_20110626_001.jar
+  * Save to a directory.
+  * Double-click on *hleOfxQuotes-Build_20110626_001.jar* to start.
+
+== Update {{{*.mny}}} file ==
+  * You can use *sunriise app* to update your {{{*.mny}}} file using above generated *fx.csv* file.
+  * Get this version of *sunriise app*: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20110626_001/sunriise-0.0.2-SNAPSHOT-jar-with-dependencies.jar
+  * Save to same directory as above *hleOfxQuotes app*.
