@@ -71,7 +71,7 @@ java -cp sunriise-0.0.2-SNAPSHOT-jar-with-dependencies.jar app.UpdateExchangeRat
 387 [main] INFO  com.le.sunriise.viewer.OpenedDb.close(OpenedDb.java:53) - Deleted db lock file=C:\TEMP\fx\sample.lrd
 388 [main] INFO  com.le.sunriise.currency.UpdateExchangeRates.main(UpdateExchangeRates.java:54) - < DONE
 }}}
-  * Now open *sample.mny*
+  * Now use MSMoney to open *sample.mny*
 {{{
 Tools -> Settings -> Program settings -> Update currencies
 }}}
