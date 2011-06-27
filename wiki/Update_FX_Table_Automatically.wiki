@@ -53,10 +53,11 @@ EUR, USD, 1.4128, Sun Jun 26 20:31:46 PDT 2011
 {{{
 java -cp sunriise-0.0.2-SNAPSHOT-jar-with-dependencies.jar app.UpdateExchangeRates fx.csv sample.mny
 }}}
-  * *UpdateExchangeRates* command takes TWO arguments
+  * *UpdateExchangeRates* command takes TWO required arguments
     * File fx.csv
     * File {{{*.mny}}} to be updated. *IMPORTANT*: Make sure that this file is currently NOT opened by MSMoney. It is NOT safe to make concurrent modification.
-  * Let's say I have file fx.csv and sample.mny in current directory
+    * (Optional) third-argument is your {{{*.mny}}} password
+  * Let's say I have file fx.csv and sample.mny in current directory and no password for sample.mny
 {{{
 java -cp sunriise-0.0.2-SNAPSHOT-jar-with-dependencies.jar app.UpdateExchangeRates fx.csv sample.mny
 0 [main] INFO  com.le.sunriise.currency.UpdateExchangeRates.main(UpdateExchangeRates.java:45) - fxFile=fx.csv
