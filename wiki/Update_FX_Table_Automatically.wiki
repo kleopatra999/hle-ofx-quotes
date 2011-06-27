@@ -66,7 +66,7 @@ java -cp sunriise-0.0.2-SNAPSHOT-jar-with-dependencies.jar app.UpdateExchangeRat
 175 [main] INFO  com.le.sunriise.Utils.openDb(Utils.java:129) - < Database.open, dbFile=sample.mny
 242 [main] INFO  com.le.sunriise.currency.UpdateExchangeRates.update(UpdateExchangeRates.java:147) -
 243 [main] INFO  com.le.sunriise.currency.UpdateExchangeRates.update(UpdateExchangeRates.java:148) - # YES NEW FX RATE
-244 [main] INFO  com.le.sunriise.currency.UpdateExchangeRates.update(UpdateExchangeRates.java:149) -   CURRENT: EUR -> USD, 1.4128, (Euro -> US dollar)
+244 [main] INFO  com.le.sunriise.currency.UpdateExchangeRates.update(UpdateExchangeRates.java:149) -   CURRENT: EUR -> USD, 1.36556, (Euro -> US dollar)
 245 [main] INFO  com.le.sunriise.currency.UpdateExchangeRates.update(UpdateExchangeRates.java:150) -   NEW: EUR -> USD, 1.4128
 387 [main] INFO  com.le.sunriise.viewer.OpenedDb.close(OpenedDb.java:53) - Deleted db lock file=C:\TEMP\fx\sample.lrd
 388 [main] INFO  com.le.sunriise.currency.UpdateExchangeRates.main(UpdateExchangeRates.java:54) - < DONE
