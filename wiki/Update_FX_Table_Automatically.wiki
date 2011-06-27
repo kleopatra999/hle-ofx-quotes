@@ -1,6 +1,6 @@
 #summary Update MSMoney 'Currencies Rate' table automatically
 
-= DRAFT -
+= DRAFT =
 
 = Introduction =
 
