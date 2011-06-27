@@ -79,7 +79,7 @@ Tools -> Settings -> Program settings -> Update currencies
 
 == Misc. ===
   * fx.csv generation: only work for Yahoo quote sources
-  * If you use Yahoo quote source as your main quote source, you can add the currency pseudo symbol (for example: EURUSD=X) as part of your symbol lists. Only the currencies will go into the fx.csv file and on the generated {{{*.ofx}}} file.
+  * If you use Yahoo quote source as your main quote source, you can add the currency pseudo symbol (for example: EURUSD=X) as part of your symbol lists. Only the currencies will go into the fx.csv file and not the generated {{{*.ofx}}} file.
   * A sample list of currencies speudo-symbols
 {{{
 ALLUSD=X
