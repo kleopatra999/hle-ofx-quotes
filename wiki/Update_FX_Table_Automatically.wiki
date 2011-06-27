@@ -49,7 +49,7 @@ EUR, USD, 1.4128, Sun Jun 26 20:31:46 PDT 2011
   * You can use *sunriise app* to update your {{{*.mny}}} file using above generated *fx.csv* file.
   * Get this version of *sunriise app*: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20110626_001/sunriise-0.0.2-SNAPSHOT-jar-with-dependencies.jar
   * Save to same directory as above *hleOfxQuotes app*.
-  * Run the following command to update 
+  * Run the following command to update. *Notes*: in the following command, the second argument to java is *-cp*.
 {{{
 java -cp sunriise-0.0.2-SNAPSHOT-jar-with-dependencies.jar app.UpdateExchangeRates fx.csv sample.mny
 }}}
