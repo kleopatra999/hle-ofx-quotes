@@ -24,7 +24,7 @@ A test version of [https://sourceforge.net/projects/sunriise/ Sunriise] can read
 java -cp sunriise-Build_20110628_19-app.jar com.le.sunriise.quote.UpdateStockPrices quotes.csv sample.mny
 }}}
     # quotes.csv: is a CSV file with stock symbol and price
-    # sample.mny: is you {{{*.mny}}} file to be modified. *IMPORTANT*: Make sure that this file is currently NOT opened by MSMoney. It is NOT safe to make concurrent modification. 
+    # sample.mny: is your {{{*.mny}}} file to be modified. *IMPORTANT*: Make sure that this file is currently NOT opened by MSMoney. It is NOT safe to make concurrent modification. 
     # (optional third argument) password for above {{{*.mny}}} file
 
 == quotes.csv file ==
