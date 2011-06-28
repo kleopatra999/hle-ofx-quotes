@@ -2,7 +2,7 @@
 
 = Introduction =
 
-An alternate method for updating the stock quotes' price. Instead of creating an OFX file and import it into MSMoney, this method modifies the {{{*.mny}}} directly.
+An alternate method for updating the stock quotes' price. Instead of creating an OFX file and import it into MSMoney, this method modifies the {{{*.mny}}} directly. This method opens up possibility to update other quote related values such as percent change, high, low ...
 
 *This feature is EXPERIMENTAL*. Please proceed with caution: test with a copy of your {{{*.mny}}} file first. 
 
