@@ -2,9 +2,30 @@
 
 = Introduction =
 
-A command-line tool to convert *.csv (list of transactions) into a *.ofx file that can be imported by MsMoney.
+A command-line tool to convert `*`.csv (list of transactions) into a `*`.ofx file that can be imported by MsMoney.
 
+== Installation ==
+  * Download: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/hleOfxQuotes-Build_20111017_98-app.jar
 
-= Details =
+== Usage ==
+  * Tool need 3 arguments:
+    ## Input file: CSV file (see example: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/sample1.csv)
+    ## Output file: OFX file (see example: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/sample1.ofx)
+    ## Mapper file: `*.props` file (see example: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/csv2ofx.props)
+  * Command-line:
+{{{
+java -cp hleOfxQuotes-Build_20111017_98-app.jar app.Csv2OfxCmd sample1.csv sample1.ofx csv2ofx.props
+}}}
+    ** That will run java using the code in file *hleOfxQuotes-Build_20111017_98-app.jar*
+    ** Run tool *app.Csv2OfxCmd* with three given arguments
+      ## Input: sample1.csv
+      ## Output: sample1.ofx
+      ## Mapper: csv2ofx.props
+  * Take a quick look of the the generated file to make sure that it looks good.
+  * Double-click on *sample1.ofx* to import into MsMoney
+  * Example of the account after imported
+<img src="http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/Csv2OfxCmd.png">
 
-DRAFT
+== See also ==
+  * http://code.google.com/p/hle-ofx-quotes/issues/detail?id=37
+  * http://social.microsoft.com/Forums/en-US/money/thread/1e01e5a8-3c06-4265-931d-9601af50db56/
