@@ -1,0 +1,10 @@
+#summary To convert CSV into OFX
+
+= Introduction =
+
+A command-line tool to convert *.csv (list of transactions) into a *.ofx file that can be imported by MsMoney.
+
+
+= Details =
+
+DRAFT
