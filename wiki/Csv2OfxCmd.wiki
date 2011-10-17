@@ -19,8 +19,150 @@ java -cp hleOfxQuotes-Build_20111017_98-app.jar app.Csv2OfxCmd sample1.csv sampl
     ** That will run java using the code in file *hleOfxQuotes-Build_20111017_98-app.jar*
     ** Run tool *app.Csv2OfxCmd* with three given arguments
       ## Input: sample1.csv
+{{{
+Date,Transaction Type,Check Number,Description,Amount
+02/03/2011,POS,,WAL-MART SUPER CENTER 02-02-11 **** BB&T CHECK CARD PURCHASE-PIN,($8.02)
+02/04/2011,POS,,SALLY BEAUTY 02-02 **** BB&T CHECK CARD PURCHASE,($7.53)
+02/07/2011,POS,,WAL-MART SUPER CENTER 02-05-11 **** BB&T CHECK CARD PURCHASE-PIN,($47.81)
+02/07/2011,POS,,WILCO 02-05 **** BB&T CHECK CARD PURCHASE,($19.50)
+02/08/2011,Deposit,,TRANSFER FROM SAVINGS ************* 02-08-11 BB&T ONLINE TRANSFER,$100.00
+02/08/2011,Debit,,ONLINE PMT AT&T CKF*********POS BB&T ONLINE BILL PAYMENT,($18.67)
+02/08/2011,Debit,,ONLINE PMT TIME WARNER CKF*********POS BB&T ONLINE BILL PAYMENT,($16.13) 
+02/08/2011,,,***LEDGERBAL***,$1000.00
+}}}
       ## Output: sample1.ofx
+{{{
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+    <SIGNONMSGSRSV1>
+        <SONRS>
+            <STATUS>
+                <CODE>0
+                <SEVERITY>INFO
+            </STATUS>
+            <DTSERVER>20111017204606
+            <LANGUAGE>ENG
+            <FI>
+                <ORG>HAN
+                <FID>6805
+            </FI>
+        </SONRS>
+    </SIGNONMSGSRSV1>
+    <BANKMSGSRSV1>
+        <STMTTRNRS>
+            <TRNUID>0
+            <STATUS>
+                <CODE>0
+                <SEVERITY>INFO
+            </STATUS>
+            <STMTRS>
+                <CURDEF>USD
+                <BANKACCTFROM>
+                    <BANKID>123456789
+                    <ACCTID>987654321
+                    <ACCTTYPE>CHECKING
+                </BANKACCTFROM>
+                <BANKTRANLIST>
+                    <DTSTART>20110203080000
+                    <DTEND>20110208080000
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT
+                        <DTPOSTED>20110203080000
+                        <TRNAMT>-8.02
+                        <FITID>06c03d85153e1f20008f3d1be77a863c
+                        <NAME>WAL-MART SUPER CENTER 02-02-11 **** BB&amp;T CHECK CARD PURCHASE-PIN
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT
+                        <DTPOSTED>20110204080000
+                        <TRNAMT>-7.53
+                        <FITID>706bf4a80e553e3817a97fc8e74aa572
+                        <NAME>SALLY BEAUTY 02-02 **** BB&amp;T CHECK CARD PURCHASE
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT
+                        <DTPOSTED>20110207080000
+                        <TRNAMT>-47.81
+                        <FITID>984d8cffc17f10f6fcfd352e02498d38
+                        <NAME>WAL-MART SUPER CENTER 02-05-11 **** BB&amp;T CHECK CARD PURCHASE-PIN
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT
+                        <DTPOSTED>20110207080000
+                        <TRNAMT>-19.5
+                        <FITID>0b882ac2055f7013b58bde9e7a0682cd
+                        <NAME>WILCO 02-05 **** BB&amp;T CHECK CARD PURCHASE
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT
+                        <DTPOSTED>20110208080000
+                        <TRNAMT>100
+                        <FITID>f8d26e7730926267571b0724e6de5752
+                        <NAME>TRANSFER FROM SAVINGS ************* 02-08-11 BB&amp;T ONLINE TRANSFER
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT
+                        <DTPOSTED>20110208080000
+                        <TRNAMT>-18.67
+                        <FITID>ad818191718f71c40df0f727ac98cb85
+                        <NAME>ONLINE PMT AT&amp;T CKF*********POS BB&amp;T ONLINE BILL PAYMENT
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT
+                        <DTPOSTED>20110208080000
+                        <TRNAMT>-16.13
+                        <FITID>16b1a324b0c5cba26aa5aa196f525f54
+                        <NAME>ONLINE PMT TIME WARNER CKF*********POS BB&amp;T ONLINE BILL PAYMENT
+                    </STMTTRN>
+                </BANKTRANLIST>
+                <LEDGERBAL>
+                    <BALAMT>1000
+                    <DTASOF>20110208080000
+                </LEDGERBAL>
+            </STMTRS>
+        </STMTTRNRS>
+    </BANKMSGSRSV1>
+</OFX>
+}}}
       ## Mapper: csv2ofx.props
+{{{
+# how to map CSV columns to OFX values
+# OFX = CSV
+#column.TRNTYPE=Transaction Type
+column.DTPOSTED=Date
+#column.DTUSER=Date
+column.TRNAMT=Amount
+#column.FITID=FITID
+column.NAME=Description
+column.MEMO=Check Number
+
+# FI info (financial institution). You can look it up from http://www.ofxhome.com/.
+# If not sure, just enter some "reasonable" values.
+# I think MsMoney uses this value to try to match to the right account.
+ORG=HAN
+FID=6805
+
+# Account info
+# Default currency
+CURDEF=USD
+BANKID=123456789
+ACCTID=987654321
+
+#CHECKING Checking
+#SAVINGS Savings
+#MONEYMRKT Money Market
+#CREDITLINE Line of credit
+ACCTTYPE=CHECKING
+}}}
   * Take a quick look of the the generated file to make sure that it looks good.
   * Double-click on *sample1.ofx* to import into MsMoney
   * Example of the account after imported
