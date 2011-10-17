@@ -26,6 +26,88 @@ java -cp hleOfxQuotes-Build_20111017_98-app.jar app.Csv2OfxCmd sample1.csv sampl
   * Example of the account after imported
 <img src="http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/Csv2OfxCmd.png">
 
+=== First time consideration ===
+  * Make sure your `*.csv` file has one entry that looks like this
+{{{
+02/08/2011,,,***LEDGERBAL***,$1000.00
+}}}
+  * The above line is needed so that the tool can generate a REQUIRED tag for account balance. Minimum requirements:
+    ** Date (column.DTPOSTED): date for the balance
+    ** Amount (column.TRNAMT): account balance at above date
+    ** Description (column.NAME): must have value `***LEDGERBAL***` (prefix and suffix with 3 `*`)
+  * Make sure your *mapper* (`*.props`) file has appropriate values for 
+{{{
+# FI info (financial institution). You can look it up from http://www.ofxhome.com/.
+# If not sure, just enter some "reasonable" values.
+# I think MsMoney uses this value to try to match to the right account.
+ORG=HAN
+FID=6805
+
+# Account info
+# Default currency
+CURDEF=USD
+BANKID=123456789
+ACCTID=987654321
+
+#CHECKING Checking
+#SAVINGS Savings
+#MONEYMRKT Money Market
+#CREDITLINE Line of credit
+ACCTTYPE=CHECKING
+}}}
+== Map file ==
+Reason for the map file
+  * Need a way to map `*.csv` column into `*.ofx` tag
+    ** Minimum column map
+{{{
+column.DTPOSTED=Date
+column.TRNAMT=Amount
+column.NAME=Description
+}}}
+  * The tool will auto-calculate
+    ** column.TRNTYPE: DEBIT (for negative amount), CREDIT (for positive amount). You can override this auto-calculate by setting *column.TRNTYPE* to a column in your `*.csv` file. See section on list of valid OFX TRNTYPE.
+    ** column.FITID: a unique id to identify this transaction.
+  * There are some additional data such as account number, balance ... that needs to be specified.
+    ** ORG: your bank (check http://www.ofxhome.com/)
+    ** FID: your bank id (check http://www.ofxhome.com/)
+    ** CURDEF: default currency
+    ** BANKID: your bank routing number
+    ** ACCTID: account id
+    ** ACCTTYPE: account type (see list of valid ACCTTYPE)
+
+=== Valid OFX TRNTYPE ===
+List of valid OFX TRNTYPE
+{{{
+    CREDIT Generic credit
+    DEBIT Generic debit
+    INT Interest earned or paid
+    Note: Depends on signage of amount
+    DIV Dividend
+    FEE FI fee
+    SRVCHG Service charge
+    DEP Deposit
+    ATM ATM debit or credit
+    Note: Depends on signage of amount
+    POS
+    Point of sale debit or credit
+    Note: Depends on signage of amount
+    XFER Transfer
+    CHECK Check
+    PAYMENT Electronic payment
+    CASH Cash withdrawal
+    DIRECTDEP Direct deposit
+    DIRECTDEBIT Merchant initiated debit
+    REPEATPMT Repeating payment/standing order
+    OTHER Other
+}}} 
+
+=== Valid OFX ACCTTYPE ===
+{{{
+CHECKING Checking
+SAVINGS Savings
+MONEYMRKT Money Market
+CREDITLINE Line of credit
+}}}
 == See also ==
   * http://code.google.com/p/hle-ofx-quotes/issues/detail?id=37
   * http://social.microsoft.com/Forums/en-US/money/thread/1e01e5a8-3c06-4265-931d-9601af50db56/
