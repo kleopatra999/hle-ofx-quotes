@@ -5,18 +5,20 @@
 A command-line tool to convert `*`.csv (list of transactions) into a `*`.ofx file that can be imported by MsMoney.
 
 == Installation ==
-  * Download: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/hleOfxQuotes-Build_20111017_98-app.jar
+  * Download: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111026_28/csv2ofx.zip
+  * Unzip to get folder *csv2ofx*
 
 == Usage ==
   * Tool need 3 arguments:
     ## Input file: CSV file (see example: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/sample1.csv)
     ## Output file: OFX file (see example: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/sample1.ofx)
     ## Mapper file: `*.props` file (see example: http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111017_98/csv2ofx.props)
+  * See the sample *csv2ofx.bat* file
   * Command-line:
 {{{
-java -cp hleOfxQuotes-Build_20111017_98-app.jar app.Csv2OfxCmd sample1.csv sample1.ofx csv2ofx.props
+java -cp hleOfxQuotes-Build_20111026_28-app.jar app.Csv2OfxCmd sample1.csv sample1.ofx csv2ofx.props
 }}}
-    ** That will run java using the code in file *hleOfxQuotes-Build_20111017_98-app.jar*
+    ** That will run java using the code in file *hleOfxQuotes-Build_20111026_28-app.jar*
     ** Run tool *app.Csv2OfxCmd* with three given arguments
       ## Input: sample1.csv
 {{{
