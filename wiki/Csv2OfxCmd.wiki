@@ -255,3 +255,4 @@ CREDITLINE Line of credit
 == See also ==
   * http://code.google.com/p/hle-ofx-quotes/issues/detail?id=37
   * http://social.microsoft.com/Forums/en-US/money/thread/1e01e5a8-3c06-4265-931d-9601af50db56/
+  * http://social.microsoft.com/Forums/en-US/money/thread/2aab47da-fe95-45ca-8338-1f63af5ecdc6
