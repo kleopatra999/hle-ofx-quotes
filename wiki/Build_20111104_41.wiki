@@ -22,7 +22,7 @@ Build_20111104_41 Release Notes
   * You can only work with one symbol at the time
   * Default date range is the last 30 days
   * We have to generate one OFX file per day. So if you ask for 30-day quotes, 30 OFX files will get generated and imported. Two things to be aware of:
-    ## Make sure you have the 'Import dialog auto-click' enable. You don't want to have to manually click 30
+    ## Make sure you have the 'Import dialog auto-click' enable. You don't want to have to manually click 30 times on the popup dialog
 {{{
 Tools -> Import dialog auto-click (check to enable)
 }}}
