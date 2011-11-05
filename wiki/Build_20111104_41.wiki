@@ -9,3 +9,18 @@ Build_20111104_41 Release Notes
 
   * Add support to download historical quotes from Yahhoo
   * Add support to convert CSV file to OFX
+
+= Download =
+
+  * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20111104_41-app.jar
+
+== Download Historical Quotes from Yahoo ==
+
+  * A new tab is added to let you download historical quotes from Yahoo
+  * You can only work with one symbol at the time
+  * Default is the last 30 days
+
+[http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111104_41/hleOfxQuotes_Historical_001.png]
+
+
+== convert CSV file to OFX ==
