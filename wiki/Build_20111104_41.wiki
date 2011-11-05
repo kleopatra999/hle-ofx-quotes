@@ -1,0 +1,11 @@
+#summary Build_20111104_41 Release Notes
+
+= Introduction =
+
+Build_20111104_41 Release Notes
+
+
+= Changes =
+
+  * Add support to download historical quotes from Yahhoo
+  * Add support to convert CSV file to OFX
