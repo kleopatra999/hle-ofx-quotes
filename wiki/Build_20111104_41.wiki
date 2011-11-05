@@ -27,7 +27,7 @@ Build_20111104_41 Release Notes
 Tools -> Import dialog auto-click (check to enable)
 }}}
     ## MsMoney takes its time to import so try a reasonable date range first (like a month). I've tested a year worth of quotes.
-  * When you click on the 'Update prices' button, you will be prompted for a date range, you can enter the date directory or click on the icon on the right of the text to popup a calendar.
+  * When you click on the 'Update prices' button, you will be prompted for a date range, you can enter the date directly or click on the icon on the right of the text to popup a calendar.
 
 
 == convert CSV file to OFX ==
