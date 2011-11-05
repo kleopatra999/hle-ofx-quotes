@@ -30,7 +30,7 @@ Tools -> Import dialog auto-click (check to enable)
   * When you click on the 'Update prices' button, you will be prompted for a date range, you can enter the date directly or click on the icon on the right of the text to popup a calendar.
 
 
-== convert CSV file to OFX ==
+== Convert CSV file to OFX ==
 
   * See: http://code.google.com/p/hle-ofx-quotes/wiki/Csv2OfxCmd
   * That wiki mention an older download. Just replace the `*`.jar filename with the current released file.
