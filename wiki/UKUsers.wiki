@@ -1,4 +1,5 @@
 #summary 000 - Read me if you are UK users.
+#labels Featured
 
 It appears that MS2005UK still getting quote price updated. So you might NOT want to try any of this yet!. Check with the following resources for the latest news on that front:
   * http://social.microsoft.com/Forums/en-US/money/threads
