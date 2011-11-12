@@ -1,4 +1,5 @@
 #summary How to get help
+#labels Featured
 
   * Please check the wiki first: https://code.google.com/p/hle-ofx-quotes/w/list
   * Search issues list: https://code.google.com/p/hle-ofx-quotes/issues/list if others have seen similar problems.
