@@ -9,35 +9,25 @@ Build_20111220_66 Release Notes
 
 = Changes =
 
-  * Add support to download historical quotes from Yahhoo
-  * Add support to convert CSV file to OFX
+  * Add support to download Bloomberg quote source
+  * Add support to download Scholarshare quote source
+  * Update FX (foreign exchange rate) for a give `*`.mny file using sunriise jar file.
+  * Fix a JVM crash on quit/shutdown.
 
 = Download =
 
-  * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20111104_41-app.jar
+  * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20111220_66-app.jar
 
-== Download Historical Quotes from Yahoo ==
+== Add support to download Bloomberg quote source ==
 
-[http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111104_41/hleOfxQuotes_Historical_001.png]
+  * Add support to download quote update from Bloomberg.
+  * Has good support for international quotes
+  * We have to query the quote one at the time so it is not as fast as Yahoo
+  * See: http://www.bloomberg.com/
+  * See: 
 
-  * A new tab is added to let you download historical quotes from Yahoo
-  * You can only work with one symbol at the time
-  * Default date range is the last 30 days
-  * We have to generate one OFX file per day. So if you ask for 30-day quotes, 30 OFX files will get generated and imported. Two things to be aware of:
-    ## Make sure you have the 'Import dialog auto-click' enable. You don't want to have to manually click 30 times on the popup dialog
-{{{
-Tools -> Import dialog auto-click (check to enable)
-}}}
-    ## MsMoney takes its time to import so try a reasonable date range first (like a month). I've tested a year worth of quotes.
-  * When you click on the 'Update prices' button, you will be prompted for a date range, you can enter the date directly or click on the icon on the right of the text to popup a calendar.
+== Add support to download Scholarshare quote source ==
 
+== Update FX (foreign exchange rate) for a give *.mny file using sunriise jar file ==
 
-== Convert CSV file to OFX ==
-
-  * See: http://code.google.com/p/hle-ofx-quotes/wiki/Csv2OfxCmd
-  * That wiki mention an older download. Just replace the `*`.jar filename with the current released file.
-  * Usage
-{{{
-java -cp hleOfxQuotes-Build_20111104_41-app app.Csv2OfxCmd sample1.csv sample1.ofx csv2ofx.props
-}}}
-  * Best to create a batch file to make the above command easier to run
+== Fix a JVM crash on quit/shutdown == 
