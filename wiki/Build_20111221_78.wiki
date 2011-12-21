@@ -16,6 +16,7 @@ Build_20111221_78 Release Notes
 = Download =
 
   * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20111221_78-app.jar
+  * If you are using this tool for the first time, please read [http://code.google.com/p/hle-ofx-quotes/wiki/FirstTimerReadMeFirst]
 
 == Add support to download Bloomberg quote source ==
   * Has good support for international quotes
