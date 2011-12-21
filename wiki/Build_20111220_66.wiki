@@ -24,7 +24,7 @@ Build_20111220_66 Release Notes
   * Has good support for international quotes
   * We have to query the quote one at the time so it is not as fast as Yahoo
   * See: http://www.bloomberg.com/
-  * See: 
+  * See: http://code.google.com/p/hle-ofx-quotes/issues/detail?id=40
 
 == Add support to download Scholarshare quote source ==
 
