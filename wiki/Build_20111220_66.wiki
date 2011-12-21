@@ -1,0 +1,7 @@
+#summary Build_20111220_66
+
+= Introduction =
+
+Build_20111220_66 is deprecated.
+Please see: http://code.google.com/p/hle-ofx-quotes/wiki/Build_20111221_78
+
