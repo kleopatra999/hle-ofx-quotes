@@ -20,7 +20,6 @@ Build_20111220_66 Release Notes
 
 == Add support to download Bloomberg quote source ==
 
-  * Add support to download quote update from Bloomberg.
   * Has good support for international quotes
   * We have to query the quote one at the time so it is not as fast as Yahoo
   * See: http://www.bloomberg.com/
