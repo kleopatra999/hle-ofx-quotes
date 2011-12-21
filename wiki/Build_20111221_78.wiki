@@ -9,8 +9,8 @@ Build_20111221_78 Release Notes
 = Changes =
 
   * Support update FX (foreign exchange rate) for a given `*`.mny file using sunriise jar file.
-  * Quote source: New Bloomberg quote source
-  * Quote source: New Scholarshare quote source
+  * Quote source: new Bloomberg quote source
+  * Quote source: new Scholarshare quote source
   * QIF: add generating QIF quotes file.
   * Fix intermittent VM crash on quit/shutdown.
   
