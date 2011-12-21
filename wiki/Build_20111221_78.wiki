@@ -55,7 +55,7 @@ Build_20111221_78 Release Notes
   * TODO: need additional instruction on how to generate pseudo-symbols. For example, what symbol to use for *Active Age-Based Investment Portfolio Option: Age Band 9-10*.
 
 == QIF: add generating QIF quotes file ==
-  * Popup menu over the price table will let you save the current price list to a *.qif file
+  * Popup menu over the price table will let you save the current price list to a `*`.qif file
   * See: http://code.google.com/p/hle-ofx-quotes/issues/detail?id=44 
 [http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111202_51/Snap_2011.12.02_12h59m00s_001.png]
 
