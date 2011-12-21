@@ -1,0 +1,48 @@
+#summary Build_20111221_78 Release Notes
+#labels Featured
+
+= Introduction =
+
+Build_20111221_78 Release Notes
+
+
+= Changes =
+
+  * Add support to download Bloomberg quote source
+  * Add support to download Scholarshare quote source
+  * Update FX (foreign exchange rate) for a give `*`.mny file using sunriise jar file.
+  * Fix a JVM crash on quit/shutdown.
+
+= Download =
+
+  * http://code.google.com/p/hle-ofx-quotes/downloads/detail?name=hleOfxQuotes-Build_20111221_78-app.jar
+
+== Add support to download Bloomberg quote source ==
+  * Has good support for international quotes
+  * We have to query the quote one at the time so it is not as fast as Yahoo
+  * See: http://www.bloomberg.com/
+  * See: http://code.google.com/p/hle-ofx-quotes/issues/detail?id=40
+
+== Add support to download Scholarshare quote source ==
+  * New manager for Scholarshare: TIAA-CREF
+  * Daily price: http://www.scholarshare.com/performance/fundperformance.shtml
+  * New support including parsing above data and convert them into `*`.ofx file.
+  * TODO: need additional instruction on how to generate pseudo-symbols.
+
+== Update FX (foreign exchange rate) for a give `*`.mny file using sunriise jar file ==
+  * Use sunriise to update FX rates.
+  * *IMPORTANT*: this most important thing to remember is that we are modifying the `*`.mny file directly. As such, Money should NOT be running and you should try first on a copy of `*`.mny.
+  * Please see this issue for background info: http://code.google.com/p/hle-ofx-quotes/issues/detail?id=27
+  * There is a new tab named "Exchange Rates"
+[http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111220_64/Snap_2011.12.20_22h07m32s_004.png]
+  * When you select "Update MsMoney", if the sunriise jar file is not available, you will offered to download the sunriise jar file, accept.
+[http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111220_64/Snap_2011.12.20_22h10m07s_005.png]
+  * Download `*`.jar file will be saved to directory *plugins/* in current directory
+[http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111220_64/Snap_2011.12.20_22h10m23s_006.png]
+  * Once the sunriise jar is completed, you will be prompted to choose the `*`.mny file and password
+[http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111220_64/Snap_2011.12.20_22h11m29s_007.png]
+  * Then a confirmation that exchange rate is upated
+[http://sunriise.sourceforge.net/out/hleofxquotes/Build_20111220_64/Snap_2011.12.20_22h11m58s_008.png]
+
+== Fix a JVM crash on quit/shutdown == 
+  * Upstream JNA package is updated to version 3.4.0 which appear to fix a JVM crash when you exit this quote tool.
