@@ -1,8 +1,7 @@
 #summary Build_20111220_66 Release Notes
+#labels Featured
 
 = Introduction =
-
-DRAFT - TODO
 
 Build_20111220_66 Release Notes
 
