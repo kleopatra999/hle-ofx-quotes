@@ -52,7 +52,7 @@ Build_20111221_78 Release Notes
   * For 2012: Scholarshare has new manager: TIAA-CREF (was Fidelity)
   * Daily price: http://www.scholarshare.com/performance/fundperformance.shtml
   * New support including parsing above data and convert them into `*`.ofx file.
-  * TODO: need additional instruction on how to generate pseudo-symbols. For example, what symbol to use for *Active Age-Based Investment Portfolio Option: Age Band 9-10*.
+  * Additional instruction on how to generate pseudo-symbols. For example, what symbol to use for *Active Age-Based Investment Portfolio Option: Age Band 9-10*. See: http://code.google.com/p/hle-ofx-quotes/wiki/ScholarShare_Nov_2011
 
 == QIF: add generating QIF quotes file ==
   * Popup menu over the price table will let you save the current price list to a `*`.qif file
