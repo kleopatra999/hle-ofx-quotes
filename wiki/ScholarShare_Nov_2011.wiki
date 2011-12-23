@@ -30,7 +30,7 @@ So for above example, the *quote source symbol* is *AABIPOAB910*.
 
 Internally to MsMoney, you should use shorter 4-char symbol, pick something that does not collide with your existing investment symbols. For example, I use SC1, SC2 ... 
 
-Then I use the mapper.csv file to map (See: http://code.google.com/p/hle-ofx-quotes/wiki/mapperDotCsv)
+Then I use the mapper.csv file to map the *quote source symbol* to the *MsMoney source symbol*. (See: http://code.google.com/p/hle-ofx-quotes/wiki/mapperDotCsv)
 
 {{{
 MSMoneySymbol,QuotesSourceSymbol,IsMutualFund,IsOptions,QuotesSourceCurrency
