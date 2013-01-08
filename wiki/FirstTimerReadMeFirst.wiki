@@ -43,7 +43,6 @@ Java HotSpot(TM) Client VM (build 19.1-b02, mixed mode, sharing)
 
   * For import statement, MM appear to update its quote price only *ONCE* a day. So if you import one in the morning, subsequent update will not change the price.
   * The sweet spot for this tool is: *US users using Microsoft Money Sunset*. I will try to support other version and environment BUT you need to be the kind who is willing to roll up your sleeve to pitch in: providing sample output, describe how things work in your environment ... 
-  * This tool does not do direct connection to bank and brokerage sites. Look for PocketSense for that task (http://sites.google.com/site/pocketsense/home/msmoneyfixp1)
 
 =Where thing could go wrong=
   * You are using the tool for the first time and not getting the dialog to create a 'Dummy' account. You should turn OFF the auto-click feature, then try to import again
