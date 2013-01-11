@@ -30,6 +30,7 @@ To check to see if your browser's Java plugin enable, use this page: https://www
 
   * Java is disable (good)
 
+https://hle-ofx-quotes.googlecode.com/issues/attachment?aid=630002000&name=image001.png&token=sAPMNj_xR6eExDEHn1A-_3FJ-C4%3A1357946696248&abc=def.png
 
 = To disable Java in browser =
 
