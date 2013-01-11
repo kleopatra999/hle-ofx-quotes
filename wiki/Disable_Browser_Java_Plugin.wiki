@@ -1,8 +1,7 @@
 #summary How to disable browser Java Plugin
+#labels Featured
 
 = Introduction =
-
-TODO
 
 I am trying to give some info on the on-going security concern about Java. In particular the zero-day exploit.
 
@@ -27,6 +26,7 @@ To check to see if your browser's Java plugin enable, use this page: https://www
 
   * Java is enable (*NOT* good)
 
+https://hle-ofx-quotes.googlecode.com/issues/attachment?aid=630002001&name=image002.png&token=uorBRnP040zMN51UEq1Vq0b_k_c%3A1357946899277&abc=def.png
 
   * Java is disable (good)
 
