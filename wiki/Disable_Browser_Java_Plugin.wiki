@@ -3,7 +3,7 @@
 
 = Introduction =
 
-I am trying to give some info on the on-going security concern about Java. In particular the zero-day exploit.
+I am trying to give some info on the on-going security concern about Java. In particular the zero-day exploit (http://www.theregister.co.uk/2013/01/10/java_0day/)
 
 = Details =
 
