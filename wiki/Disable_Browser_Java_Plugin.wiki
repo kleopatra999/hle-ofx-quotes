@@ -14,7 +14,7 @@ On Jan 10, 2013, CERT issued a bulletin on a new Java's security hole called zer
  * When you run java with a tool such as 'hleofxquotes', you start the JVM with a known set of classes namely the ones from the 'hleofxquotes`*`.jar' file.
  * When Java is being invoked via the browser's java plugin, your browser accesses and downloads files from remote servers and can be tricked into download and execute classes that you don't know.
 
-You will need Java run 'hleofxquotes'. My recommendation is to keep your Java installation installed as-is but *DISABLE* the browser's *Java plugin*.
+You will need Java to run 'hleofxquotes'. My recommendation is to keep your Java installation installed as-is but *DISABLE* the browser's *Java plugin*.
 
 
 For more info about the exploit, see CERT bulletin http://www.kb.cert.org/vuls/id/625617
