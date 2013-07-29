@@ -1,4 +1,5 @@
 #summary FAQ
+#labels Featured
 
 *Q:* What version should I download?
 
