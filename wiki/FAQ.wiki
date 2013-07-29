@@ -4,4 +4,4 @@
 
 *A:* Download from: http://code.google.com/p/hle-ofx-quotes/downloads/list. Download the build that is labelled *DOWNLOAD ME*.
 
- ---- 
+----
