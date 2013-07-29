@@ -5,3 +5,11 @@
 *A:* Download from: http://code.google.com/p/hle-ofx-quotes/downloads/list. Download the build that is labelled *DOWNLOAD ME*.
 
 ----
+*Q:* What Microsoft Money version does this tool support?
+
+*A:* I use MS Money Sunset US. So
+  * Best support: MS Money Sunset US
+  * Limited support: 2005 UK (See http://code.google.com/p/hle-ofx-quotes/wiki/UKUsers)
+  * Microsoft Money that supports OFX version 2.00 and above. I am not quite sure which version of Microsoft Money starts to support OFX 2.00
+
+----
