@@ -1,6 +1,9 @@
 #summary How to get help
 #labels Featured
 
+  * Please check the FAQ: http://code.google.com/p/hle-ofx-quotes/wiki/FAQ
+  * Then http://code.google.com/p/hle-ofx-quotes/wiki/FirstTimerReadMeFirst
+  * Then http://code.google.com/p/hle-ofx-quotes/wiki/The_first_N_steps
   * Please check the wiki first: https://code.google.com/p/hle-ofx-quotes/w/list
   * Search issues list: https://code.google.com/p/hle-ofx-quotes/issues/list if others have seen similar problems.
   * Review current comments and post YOUR questions to this blog: http://microsoftmoneyoffline.wordpress.com/2010/02/12/java-app-to-update-quotes/
