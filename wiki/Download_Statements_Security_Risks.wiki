@@ -4,6 +4,8 @@
 
 I want to try the "Download Statements" feature, what security risks are there? What is my exposure?
 
+  * See also: https://code.google.com/p/hle-ofx-quotes/wiki/Download_Statements_Tips
+
 == Your Money file ==
 
 This tools does not modify your Money file until you *specifically tell it to do so*. In both cases:
