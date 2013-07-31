@@ -8,7 +8,7 @@ I want to try the "Download Statements" feature, what security risks are there? 
 
 == Your Money file ==
 
-This tool does not modify your Money file until you *specifically tell it to do so*. In both cases:
+This tool does not modify your Money file until you *specifically tell it to do so* in both cases:
   # Quotes download
   # and Statement download
 There are always two steps:
