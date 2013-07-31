@@ -4,6 +4,7 @@
 
 Tips and tricks for downloading statements
 
+  * See also: https://code.google.com/p/hle-ofx-quotes/wiki/Download_Statements_Security_Risks
 
 = OFX info =
 
