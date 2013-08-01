@@ -12,6 +12,21 @@
   * Limited support: 2005 UK (See http://code.google.com/p/hle-ofx-quotes/wiki/UKUsers)
   * Microsoft Money that supports OFX version 2.00 and above. I am not quite sure which version of Microsoft Money starts to support OFX 2.00
 ----
+*Q:* Cannot start. Nothing happens where I double click on the jar file.
+
+*A:* Try to run the tool in a command window.
+  # Start the command window (see also: http://pcsupport.about.com/od/commandlinereference/f/open-command-prompt.htm)
+  # Go to the directory (folder) where you keep your hleofxquotes*.jar file
+{{{
+cd …some\directory
+}}}
+  # At the prompt type
+{{{
+java -jar nameOfJarFile.jar
+}}}
+  # Is there any error in the window?
+  # There should be a log file in same folder/directory (see: https://code.google.com/p/hle-ofx-quotes/wiki/Log_Files)
+----
 *Q:* Generated OFX file imported OK (no error) but price is not updated
 
 *A:* If you are using MS Money 2005, please make sure to enable option *Incrementally Increased Share Count*. See the following page for explanation: http://code.google.com/p/hle-ofx-quotes/wiki/UKUsers
