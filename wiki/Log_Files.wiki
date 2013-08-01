@@ -19,4 +19,6 @@ java -jar hleOfxQuotes-XXXj.jar
 should see log entries here ...
 }}}
 
+To start a cmd window, see also: http://pcsupport.about.com/od/commandlinereference/f/open-command-prompt.htm
+
 The library that *hleOfxQuotes* uses to log is log4j. See: http://logging.apache.org/log4j/1.2/
