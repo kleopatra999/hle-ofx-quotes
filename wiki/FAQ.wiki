@@ -58,5 +58,5 @@ See: http://social.microsoft.com/Forums/en-US/e9831d45-d284-4f9f-81d1-a1628dc6ff
 *Q:* Select to import OFX, bring up MondayDance
 
 *A:* You will need to decide which programs (MoneyDance or MM) to handle when you double-click the `*`.ofx file.
-  * If you want to let MoneyDance to handle when you double-click the `*`.ofx file. Then in hleofxquots, select to save the generated *.ofx file. Then in MM, use Import to import the generated `*`.ofx
+  * If you want to let MoneyDance to handle when you double-click the `*`.ofx file. Then in hleofxquots, select to save the generated `*`.ofx file. Then in MM, use Import to import the generated `*`.ofx
   * If you wan to re-set the `*`.ofx association, see http://money.mvps.org/faq/article/178.aspx
