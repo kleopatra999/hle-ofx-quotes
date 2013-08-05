@@ -9,6 +9,8 @@ This tool can use a helper file called *mapper.csv* to let you map a symbol that
     * When talking to MM, use *BBT*. Literally, this means when generating the OFX file.
   * Some Quote Source also does NOT provide the information that identify if a symbol is of type mutual funds or managed funds. This tool needs that information to generate correct OFX output. If you are using ft.com or Google Portfolio, you MUST create a mapper.cvs file with filled in column *IsMutualFund* or your fund will not be updated correctly.
 
+Sample file: http://hle-ofx-quotes.googlecode.com/files/mapper.csv
+
 == Usage ==
 
   * Create a file name *mapper.csv* in the same directory where you keep the `*`.jar file. You can also use menu
