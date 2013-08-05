@@ -11,7 +11,7 @@ This tool can use a helper file called *mapper.csv* to let you map a symbol that
 
 Sample file: http://hle-ofx-quotes.googlecode.com/files/mapper.csv
 
-If it does not appear to work, one quick check
+=== If it does not appear to work, one quick check ===
 
 Make sure the mapper.csv file is the 'current working directory'. You can find the 'current working directory' by looking at the output of menu item
 {{{
