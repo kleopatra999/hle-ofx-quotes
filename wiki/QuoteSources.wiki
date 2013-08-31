@@ -5,7 +5,7 @@ Some comments on Quote Sources: where we get our quote price. Currently, this to
   # Yahoo: very good for US stocks, funds ...
   # Yahoo Options: options prices. You can also this as the fall back quote source for symbols that the main Yahoo quotes source fail to find.
   # ft.com: very good coverage for UK funds. The one draw back is that you need to download the CSV file yourself. 
-  # Google Portfolio: has its quirk. You must have a non-zero transaction. Reason: you cannot get the quote price directly, rather we derive the quote price from currentValue/shares. Can return multiple currency prices (for example: in USD and GBP)
+  # Google Portfolio: ~~has its quirk. You must have a non-zero transaction. Reason: you cannot get the quote price directly, rather we derive the quote price from currentValue/shares. Can return multiple currency prices (for example: in USD and GBP)~~. *UPDATE*: Google has shutdown the Finance API service. See: http://social.microsoft.com/Forums/en-US/e9831d45-d284-4f9f-81d1-a1628dc6ff96/hleofxquotes-google-finance-api-will-be-shut-down-on-october-20-2012
 
 Most US users use Yahoo. Most UK users use ft.com.
 
