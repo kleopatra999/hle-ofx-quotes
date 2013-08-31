@@ -21,6 +21,20 @@ Standard Life UK Smaller Companies Acc Inst Shares,STUSCA,Feb 07 2011 00:00 GMT,
 
 = Yahoo =
 
+Q: I can find ticker XYZ.L and updated price on Yahoo Finance
+but your tool cannot download it. 
+
+A: Though they can be viewed on the web, the price of those securities are not available for download from Yahoo. If you don't believe me, try this
+  * Go to the bottom right of where you see the price quote. Find the section that is labeled
+{{{
+Toolbox
+
+    Download Data (delayed)
+}}}
+ * Click on the 'Download Data' link, you will see that that data is either blank or has zero values.
+   
+
+
 = ft.com =
 
 Currently, the following columns are used from ft.com's results.csv file
